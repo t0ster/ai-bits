@@ -13,4 +13,4 @@ Reusable building blocks and examples for AI applications.
 - Modules with clear boundaries: [modular monolith](https://milanjovanovic.tech/blog/what-is-a-modular-monolith).
 - Modules are [deep modules](https://github.com/mattpocock/skills/blob/main/skills/in-progress/setup-ts-deep-modules/SKILL.md): a lot of behaviour behind a small public interface.
 - Boundaries are enforced, not just documented: [tach](https://github.com/tach-org/tach) in Python, [dependency-cruiser](https://github.com/sverweij/dependency-cruiser) as the TypeScript equivalent.
-- Layers run `entry points` → `packages/` → `lib/`; imports go downward only and never form cycles.
+- Layers run `entry points` → `packages/` → `shared/core/infra`; imports go downward only and never form cycles.

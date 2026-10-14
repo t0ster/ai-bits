@@ -8,7 +8,6 @@ Vercel AI SDK v7 chat with durable Postgres threads, retry, model tools, and a s
   - Generation runs to completion even if the client disconnects.
 - `shared/`: wire types, the model tool and command schemas, and typed error keys (`i18n.ts`).
 
-Domain terms: [GLOSSARY.md](GLOSSARY.md).
 
 ## Setup
 
@@ -63,7 +62,6 @@ To exercise retry end to end, start the backend with `CHAT_VERIFICATION_STREAM_E
   - Each request gets an HTTP span. Each turn gets a `chat.turn` span.
   - AI SDK spans and Postgres spans are included.
 - When `LANGFUSE_PUBLIC_KEY` and `LANGFUSE_SECRET_KEY` are set, spans are also sent to Langfuse. User and thread IDs propagate as Langfuse user and session IDs.
-- Prompts, responses, and SQL text appear in the output. Keep that output local.
 
 ## Backend CLI
 

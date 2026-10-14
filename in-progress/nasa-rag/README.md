@@ -25,3 +25,9 @@ uv run cli/ragas_evals.py --dataset nasa-rag-reference-v1 --description "Baselin
 ```
 
 Run `--help` on any command for options.
+
+Generate a synthetic Ragas dataset from indexed chunks:
+
+```sh
+uv run cli/ragas_generate.py --size 5 --chunk-limit 20 --output datasets/generated.json
+```

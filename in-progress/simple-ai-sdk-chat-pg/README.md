@@ -58,6 +58,8 @@ To exercise retry end to end, start the backend with `CHAT_VERIFICATION_STREAM_E
 
 ## Telemetry
 
+Related reading: [Observability: Wide Events 101](https://boristane.com/blog/observability-wide-events-101/).
+
 - OpenTelemetry spans print to stdout through `ConsoleSpanExporter`.
   - Each request gets an HTTP span. Each turn gets a `chat.turn` span.
   - AI SDK spans and Postgres spans are included.

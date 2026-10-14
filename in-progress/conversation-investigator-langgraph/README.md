@@ -35,5 +35,3 @@ Ambiguous scope pauses for clarification. Commands print JSON. Request IDs must 
 uv run --group demo uvicorn api:app --port 8000
 cd demo-ui && bun install && bun run dev   # http://localhost:5173
 ```
-
-Local use only: the API has no authentication.

@@ -1,0 +1,60 @@
+[project]
+name = "conversation-investigator"
+version = "0.1.0"
+description = "Queued chats and investigations over persisted conversations"
+authors = [
+    { name = "Roman Dolgyi", email = "tosters@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "bullmq>=3.3.2",
+    "langchain-openai>=1.7.0",
+    "langgraph>=1.2.14",
+    "langgraph-checkpoint-postgres>=3.1.2",
+    "openai>=3.26.1",
+    "pgvector>=0.5.1",
+    "psycopg-pool>=3.3.3",
+    "psycopg[binary]>=3.3.6",
+    "pydantic>=2.14.0",
+    "pydantic-settings>=2.15.0",
+    "redis>=8.1.0",
+    "sqlalchemy[asyncio]>=2.1.4",
+    "typer>=0.27.3",
+]
+
+[project.scripts]
+cli = "cli:main"
+
+[build-system]
+requires = ["hatchling>=1.32.4,<2"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+demo = [
+    "fastapi>=0.143.0",
+    "uvicorn[standard]>=0.54.0",
+]
+dev = [
+    "basedpyright>=1.40.2",
+    "ruff>=0.16.10",
+    "tach>=0.35.3",
+]
+
+[tool.hatch.build.targets.wheel]
+# Root entrypoint modules plus the lib and packages directories.
+include = ["/cli.py", "/worker.py", "/lib", "/packages"]
+
+[tool.basedpyright]
+# Dependencies expose inline types but have incomplete PEP 561 markers.
+# Analyze library source and retain type mismatch checks.
+reportMissingTypeStubs = false
+useLibraryCodeForTypes = true
+
+reportImplicitStringConcatenation = "none"
+reportExplicitAny = "none"
+reportAny = "none"
+reportMissingTypeArgument = "none"
+reportUnknownParameterType = "none"
+reportUnknownVariableType = "none"
+reportUnknownArgumentType = "none"
+reportUnknownMemberType = "none"

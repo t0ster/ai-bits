@@ -1,0 +1,21 @@
+# Python-generated files
+__pycache__/
+__marimo__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local environment secrets
+.env.local
+
+# Downloaded NASA e-books (cli/download_nasa_books.py); keep metadata.json
+/data/nasa/**/*
+!/data/nasa/**/
+!/data/nasa/**/metadata.json
+
+.scratch/

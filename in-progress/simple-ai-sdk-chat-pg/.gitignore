@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.*
+!.env.example
+frontend/.output/
+frontend/.tanstack/
+frontend/dist/
+.DS_Store
+!.env.*.example
+.scratch/

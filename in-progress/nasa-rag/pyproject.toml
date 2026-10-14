@@ -1,0 +1,73 @@
+[project]
+name = "nasa-rag"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.14,<3.15"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "defusedxml>=0.7.1",
+    # Keep the last Docling release compatible with docling-parse 4.x.
+    # Parser 4.7.2 has a Python 3.14 Intel macOS wheel; newer versions require a slow source build.
+    "docling==2.73.1",
+    "docling-parse==4.7.2",
+    # Ragas 0.4.3 imports chat_models.vertexai, removed in 0.4.2.
+    "httpx>=0.28.1",
+    "langchain-community<0.4.2",
+    "langfuse>=4.16.0",
+    "llama-index>=0.14.25",
+    "llama-index-llms-openai-like>=0.8.0",
+    "llama-index-node-parser-docling>=0.5.0",
+    "llama-index-postprocessor-cohere-rerank>=0.10.0",
+    "llama-index-readers-docling>=0.5.0",
+    "llama-index-storage-docstore-postgres>=0.6.0",
+    "llama-index-storage-kvstore-postgres>=0.4.3",
+    "llama-index-vector-stores-postgres>=0.9.0",
+    "numpy>=2,<3",
+    "openinference-instrumentation-llama-index>=4.5.4",
+    "psycopg2-binary>=2.9.13",
+    "pydantic-settings>=2.15.0",
+    "python-dotenv>=1.2.4",
+    "ragas>=0.4.3",
+    "rapidfuzz>=3.14.6",
+    "tiktoken>=0.14.0",
+    "torch==2.14.1",
+    "torchvision==0.29.1",
+]
+
+[build-system]
+requires = ["hatchling>=1.32.4,<2"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["lib", "packages", "cli"]
+
+[tool.uv]
+required-environments = ["sys_platform == 'darwin' and platform_machine == 'x86_64'"]
+
+[tool.uv.sources]
+# Community build: official PyTorch wheels no longer support Intel macOS.
+# Verified SHA-256: ee8fc71da2c6e150a2e42a1ba003e2de2a5c101b5532e2f81387f311552be923
+torch = { url = "https://github.com/Morton-Li/PyTorch-MacOS-Builder/releases/download/v2.14.1/torch-2.14.1-cp314-cp314-macosx_11_0_x86_64.whl", marker = "sys_platform == 'darwin' and platform_machine == 'x86_64'" }
+# Built from official torchvision v0.29.1 (no Intel macOS wheels on PyPI); requires macOS 15+.
+# Build notes: https://github.com/t0ster/intel-mac-builds/releases/tag/torchvision-0.29.1
+# Verified SHA-256: 60956f0e9ecb670f99927cbfdf0961b4569b04a5e3f7ceecc947bcfa6038c798
+torchvision = { url = "https://github.com/t0ster/intel-mac-builds/releases/download/torchvision-0.29.1/torchvision-0.29.1-cp314-cp314-macosx_15_0_x86_64.whl", marker = "sys_platform == 'darwin' and platform_machine == 'x86_64'" }
+
+[tool.basedpyright]
+reportImplicitStringConcatenation = "none"
+reportExplicitAny = "none"
+reportAny = "none"
+reportMissingTypeArgument = "none"
+reportUnknownParameterType = "none"
+reportUnknownVariableType = "none"
+reportUnknownArgumentType = "none"
+reportUnknownMemberType = "none"
+reportMissingTypeStubs = "none"
+
+[dependency-groups]
+dev = [
+    "basedpyright>=1.40.1",
+    "marimo[recommended]>=0.25.1",
+    "ruff>=0.16.10",
+    "tach>=0.35.3",
+]

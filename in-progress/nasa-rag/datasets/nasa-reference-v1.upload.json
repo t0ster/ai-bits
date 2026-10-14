@@ -1,0 +1,21 @@
+{
+  "dataset_id": "cmuughjkr1bqpad0dcxb8dk82",
+  "dataset_name": "nasa-rag-reference-v1",
+  "project_id": "cmutrxww205r3ad0hbswtgk1e",
+  "url": "https://cloud.langfuse.com/project/cmutrxww205r3ad0hbswtgk1e/datasets/cmuughjkr1bqpad0dcxb8dk82",
+  "verified_items": 30,
+  "verified_fields": [
+    "id",
+    "input",
+    "expectedOutput",
+    "metadata"
+  ],
+  "expected_behavior_counts": {
+    "answer": 27,
+    "abstain": 2,
+    "correct_premise": 1
+  },
+  "evaluation_rules_unchanged": true,
+  "original_items_preserved": 15,
+  "ragas_items_added": 15
+}

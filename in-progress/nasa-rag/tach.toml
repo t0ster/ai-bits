@@ -1,0 +1,35 @@
+# Highest first; a module may import from any lower layer.
+layers = ["cli", "packages", "platform"]
+forbid_circular_dependencies = true
+
+[[modules]]
+path = "cli"
+layer = "cli"
+depends_on = []
+
+[[modules]]
+path = "packages.*"
+layer = "packages"
+depends_on = []
+
+[[modules]]
+path = "lib"
+layer = "platform"
+depends_on = []
+
+[[interfaces]]
+from = ["packages.rag"]
+expose = [
+    'QuestionAnswerEngine',
+    'QuestionAnswerResult',
+    'QuestionRetrievalResult',
+    'build_question_answer_engine',
+    'convert_document',
+    'document_embedding_model',
+    'document_node_parser',
+    'document_vector_store',
+    'generate_question_answer',
+    'ingest_document',
+    'ingest_nasa_archive',
+    'retrieve_question_context',
+]

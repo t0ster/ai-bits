@@ -1,0 +1,37 @@
+{
+  "title": "Thinking Obliquely",
+  "authors": [
+    "Bruce I. Larrimer"
+  ],
+  "publisher": "NASA",
+  "publication_date": "2013-08-15T04:00:00+00:00",
+  "description": "<p class=\"description\">On December 21, 1979, the National Aeronautics and Space Administration (NASA) AD-1 Oblique Wing Research Aircraft (OWRA) took off from the main runway at Edwards Air Force Base (AFB), CA, for a 45-minute checkout flight. It marked the world’s first flight of a piloted oblique-wing airplane. This historic flight, which was flown with the airplane’s wing at its “straight” (0-degree angle) position, was soon followed by flights at wing angles of 15 degrees, 20 degrees, 45 degrees, and finally on April 24, 1981, at the 60-degree-angle design goal, thus proving the aerodynamic concept of an airplane with an oblique-wing configuration. This initial oblique-wing program, which ran from 1976 through 1982, was a joint effort between NASA’s Ames Research Center and Dryden Flight Research Center, CA, thus giving rise to the aircraft’s name: Ames-Dryden AD-1 Oblique Wing Research Aircraft. Chapter 1 reviews the life of NASA aerodynamicist Robert T. Jones and his path to the oblique wing. Chapter 2 covers the extensive wind tunnel, model, computer-code, and simulation testing, first at Langley and later at Ames, as well as a number of NASA industry design contracts undertaken by Boeing and Lockheed. Chapter 3 reviews the design and fabrication of the AD-1 Oblique Wing Research Aircraft and its subsequent proposed use as a joined-wing demonstrator. Chapter 4 describes the flight testing and flight evaluation of the AD-1. Chapter 5 reviews the supersonic F-8 followup oblique-wing program. And, finally, chapter 6 reviews the subsequent oblique-wing plans and proposals. Appendices present the physical characteristics of the AD-1 aircraft, a detailed description of it, and a summary flight log of its flight research program.</p>",
+  "language": "en",
+  "subjects": [
+    "aeronautics",
+    "oblique wing",
+    "DFRC",
+    "Ames Research Center",
+    "Dryden Flight Research Center",
+    "Thinking Obliquely",
+    "Oblique Wing Research Aircraft",
+    "airplanes",
+    "Edwards Air Force Base",
+    "AFB",
+    "research",
+    "OWRA",
+    "NASA",
+    "Robert T. Jones",
+    "ARC",
+    "Boeing",
+    "Lockheed",
+    "AD-1",
+    "history"
+  ],
+  "collection": "The NASA Aeronautics e-Book Series",
+  "files": [
+    "Thinking Obliquely.epub",
+    "Thinking Obliquely.pdf"
+  ],
+  "cover": "cover.jpg"
+}

@@ -1,0 +1,9 @@
+# Only explicitly listed symbols are public to other packages.
+[[interfaces]]
+from = ["<domain_root>"]
+expose = [
+    'TranscriptEntry',
+    'ingest_conversations\.IngestInput',
+    'ingest_conversations\.IngestResult',
+    'ingest_conversations\.ingest_conversations',
+]

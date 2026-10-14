@@ -1,0 +1,13 @@
+# Only explicitly listed symbols are public to other packages.
+[[interfaces]]
+from = ["<domain_root>"]
+expose = [
+    'build_chat_graph',
+    'jobs\.ChatReplyReference',
+    'jobs\.chat_send_job',
+    'send_chat_message\.send_chat_message',
+    'read_chat_history\.ChatMessage',
+    'read_chat_history\.ChatRequest',
+    'read_chat_history\.ChatHistory',
+    'read_chat_history\.read_chat_history',
+]

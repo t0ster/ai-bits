@@ -1,0 +1,14 @@
+{
+  "name": "@app/shared",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./i18n": "./i18n.ts"
+  },
+  "dependencies": {
+    "ai": "7.0.114",
+    "i18next": "^26.4.2",
+    "zod": "4.6.5"
+  }
+}

@@ -1,0 +1,398 @@
+{
+  "reviewer_model": "codex/gpt-6-astra",
+  "prompt": "Independently audit a synthetic NASA RAG evaluation dataset. Do not answer from outside knowledge. Judge each question and reference against ONLY its exact supplied original source chunks. No production RAG answer was used. Return one JSON review for each case_id matching the schema.\nCheck EVERY material reference claim, including negations, degree of certainty, named entities, units, scope, planned versus achieved outcomes, and causality. Check the reference fully answers the question without irrelevant additions. Question must be self-contained, unambiguous, natural and useful. Exact evidence quotes must support every material reference claim; source chunks may have extra irrelevant content, do not use that to justify a quote that omits essential support. For multi_source_comparison, verify at least two distinct chunks contribute needed information, not cosmetic citations. Check question duplication within batch.\nTwo special abstention cases have empty evidence: their expected behavior is no fabricated answer. Assess abstention appropriateness against the supplied corpus audit, NOT a factual reference answer; absence audit is limited, not proof of worldwide nonexistence. A false-premise question can be answerable by correcting it from explicit evidence. Do not equate it with total abstention. Reference is source-relative, not guaranteed historical truth. Known Apollo 12 date error in a source must not be repeated. Flag flaws strictly and offer concise concrete fixes. A passing case has all five booleans true and no issues. Never hide failures in suggested_fix while marking pass.\n",
+  "schema": {
+    "$defs": {
+      "Review": {
+        "properties": {
+          "case_id": {
+            "title": "Case Id",
+            "type": "string"
+          },
+          "supported": {
+            "title": "Supported",
+            "type": "boolean"
+          },
+          "complete": {
+            "title": "Complete",
+            "type": "boolean"
+          },
+          "unambiguous": {
+            "title": "Unambiguous",
+            "type": "boolean"
+          },
+          "distinct_test": {
+            "title": "Distinct Test",
+            "type": "boolean"
+          },
+          "evidence_sufficient": {
+            "title": "Evidence Sufficient",
+            "type": "boolean"
+          },
+          "issues": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Issues",
+            "type": "array"
+          },
+          "suggested_fix": {
+            "title": "Suggested Fix",
+            "type": "string"
+          }
+        },
+        "required": [
+          "case_id",
+          "supported",
+          "complete",
+          "unambiguous",
+          "distinct_test",
+          "evidence_sufficient",
+          "issues",
+          "suggested_fix"
+        ],
+        "title": "Review",
+        "type": "object"
+      }
+    },
+    "properties": {
+      "items": {
+        "items": {
+          "$ref": "#/$defs/Review"
+        },
+        "maxItems": 4,
+        "minItems": 4,
+        "title": "Items",
+        "type": "array"
+      }
+    },
+    "required": [
+      "items"
+    ],
+    "title": "Reviews",
+    "type": "object"
+  },
+  "human_reviewed": false,
+  "items": [
+    {
+      "case_id": "nasa-ref-01",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-02",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-03",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-04",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-05",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-06",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-07",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-08",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-09",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-10",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-11",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-12",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-13",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-14",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-15",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    }
+  ],
+  "initial_items": [
+    {
+      "case_id": "nasa-ref-01",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-02",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-03",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-04",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-05",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-06",
+      "supported": true,
+      "complete": false,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": false,
+      "issues": [
+        "The reference omits the explicit change in O’Keefe’s approach: he had previously eschewed destination-driven goals but became an advocate of a Moon-Mars-and-beyond program.",
+        "The budget explanation omits the strategy of keeping successor-system cost projections vague and emphasizing the Moon rather than Mars to avoid sticker shock and convey a pay-as-you-go image.",
+        "The evidence quotes do not establish that the interagency group originated in the White House; the quoted passage begins after that identification."
+      ],
+      "suggested_fix": "Add the explicit reversal from avoiding destination-driven goals to promoting Moon-Mars-and-beyond. Briefly include vague cost projections and the pay-as-you-go presentation. Add exact quotes establishing the White House origin, the reversal, and these budget-strategy details."
+    },
+    {
+      "case_id": "nasa-ref-07",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-08",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": false,
+      "issues": [
+        "The reference identifies SCAT-15F as fixed-wing, but neither evidence quote establishes that attribute. The supplied source supports it in the preceding sentence, which also establishes the question’s 1964 Langley identification."
+      ],
+      "suggested_fix": "Add the exact source sentence beginning “In 1964, a Langley team” and ending “called the SCAT-15F” to the evidence."
+    },
+    {
+      "case_id": "nasa-ref-09",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-10",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-11",
+      "supported": true,
+      "complete": false,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": false,
+      "issues": [
+        "The question broadly asks about reentry problems, but the reference omits the actual-flight account's explicitly identified most serious problem: unsatisfactory control without automatic stability augmentation, including divergent pilot-induced roll-yaw oscillations. It also omits the proposed configuration's stability and controllability problem, which the first chunk says soon outweighed heating. These omissions make the heating-versus-dynamics contrast incomplete.",
+        "The selected Mach 7 quote explicitly supports reduced heating but stops before the sentence explicitly supporting reduced exposure to peak dynamic pressure. Thus the claim that higher-angle-of-attack deceleration would lessen both loads is not fully covered by the selected evidence."
+      ],
+      "suggested_fix": "Add the proposed high-angle-of-attack stability concerns and the actual X-15's dependence on stability augmentation, with exact supporting quotes. Extend the Mach 7 evidence through the sentence stating that increased drag would reduce exposure to peak dynamic pressure and high heating rates. Alternatively, narrow the question explicitly to the initial heating/load analysis versus the actual-flight account's heating and pullout-load discussion."
+    },
+    {
+      "case_id": "nasa-ref-12",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": false,
+      "issues": [
+        "The reference correctly characterizes both capsule studies as Langley subsonic tests, but the selected quotes omit the introductory sentence establishing Langley and vertically descending subsonic flight for both capsules. Only the Gemini quote independently specifies subsonic speeds; the Apollo quote does not establish that scope."
+      ],
+      "suggested_fix": "Add this exact evidence sentence: \"Meanwhile, at Langley, researchers in the Spin Tunnel were conducting dynamic stability investigations of the Mercury, Gemini, and Apollo capsules in vertically descending subsonic flight.\""
+    },
+    {
+      "case_id": "nasa-ref-13",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-14",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    },
+    {
+      "case_id": "nasa-ref-15",
+      "supported": true,
+      "complete": true,
+      "unambiguous": true,
+      "distinct_test": true,
+      "evidence_sufficient": true,
+      "issues": [],
+      "suggested_fix": ""
+    }
+  ],
+  "revised_cases": [
+    "nasa-ref-06",
+    "nasa-ref-08",
+    "nasa-ref-11",
+    "nasa-ref-12"
+  ],
+  "reviewed_content_sha256": "88bb67ccff075dcb8e602083c8931fcf5700031cdecb9e24a46e64ab7e1ccf4d"
+}

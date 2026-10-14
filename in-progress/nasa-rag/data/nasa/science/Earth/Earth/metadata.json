@@ -1,0 +1,19 @@
+{
+  "title": "Earth",
+  "authors": [
+    "Michael Carlowicz",
+    "Lawrence Friedl",
+    "Kevin Ward"
+  ],
+  "publisher": "NASA",
+  "publication_date": "2018-11-06T20:53:50+00:00",
+  "description": null,
+  "language": "en-US",
+  "subjects": [],
+  "collection": "Earth",
+  "files": [
+    "Earth.epub",
+    "Earth.pdf"
+  ],
+  "cover": "cover.jpg"
+}

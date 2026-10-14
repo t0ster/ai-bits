@@ -1,0 +1,25 @@
+{
+  "name": "@app/root",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "bun run --cwd frontend dev",
+    "dev:backend": "bun run --cwd backend dev",
+    "typecheck": "bun run --cwd frontend typecheck && bun run --cwd backend typecheck",
+    "test": "bun run --cwd backend test",
+    "format": "biome format --write frontend/src shared && bun run --cwd backend format",
+    "check": "biome check frontend/src shared && bun run --cwd backend check",
+    "check:fix": "biome check --write frontend/src shared && bun run --cwd backend check:fix"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.14",
+    "@types/node": "^26.6.2",
+    "typescript": "^7.0.2",
+    "zod": "4.6.5"
+  }
+}

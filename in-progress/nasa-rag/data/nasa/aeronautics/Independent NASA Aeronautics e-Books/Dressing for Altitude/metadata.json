@@ -1,0 +1,24 @@
+{
+  "title": "Dressing for Altitude",
+  "authors": [
+    "Dennis R. Jenkins"
+  ],
+  "publisher": "NASA",
+  "publication_date": "2012-08-30T04:00:00+00:00",
+  "description": "Anybody who has watched many movies or television shows has seen them—the ubiquitous silver suits worn by pilots as they explore the unknown. They are called pressure suits, and one can trace their lineage to Wiley Post or, perhaps, a bit earlier.",
+  "language": "en-US",
+  "subjects": [
+    "NASA",
+    "suits",
+    "dressing",
+    "altitude",
+    "Wiley Post",
+    "pressure suits"
+  ],
+  "collection": "Independent NASA Aeronautics e-Books",
+  "files": [
+    "Dressing for Altitude.epub",
+    "Dressing for Altitude.pdf"
+  ],
+  "cover": "cover.jpg"
+}

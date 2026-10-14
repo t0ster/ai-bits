@@ -1,0 +1,18 @@
+# Only explicitly listed symbols are public to other packages.
+[[interfaces]]
+from = ["<domain_root>"]
+expose = [
+    'InvestigationEvent',
+    'jobs\.InvestigationStartJobInput',
+    'jobs\.InvestigationReplyJobInput',
+    'jobs\.build_investigation_graph',
+    'jobs\.investigation_start_job',
+    'jobs\.investigation_reply_job',
+    'start_investigation\.InvestigationStart',
+    'start_investigation\.start_investigation',
+    'reply_investigation\.InvestigationReply',
+    'reply_investigation\.reply_investigation',
+    'get_investigation\.InvestigationLookup',
+    'get_investigation\.InvestigationSnapshot',
+    'get_investigation\.get_investigation',
+]

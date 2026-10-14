@@ -1,0 +1,20 @@
+# Highest first; a module may import from any lower layer.
+# Feature module interfaces live in packages/*/tach.domain.toml.
+layers = ["entrypoints", "packages", "platform"]
+forbid_circular_dependencies = true
+
+[[modules]]
+paths = ["api", "cli", "worker"]
+layer = "entrypoints"
+depends_on = []
+
+# Shared platform code: config, shared, core, database.
+[[modules]]
+path = "lib"
+layer = "platform"
+depends_on = []
+
+[[modules]]
+path = "packages.*"
+layer = "packages"
+depends_on = []

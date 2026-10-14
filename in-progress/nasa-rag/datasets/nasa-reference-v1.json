@@ -1,0 +1,1635 @@
+{
+  "dataset_name": "nasa-rag-reference-v1",
+  "version": "1",
+  "created_at": "2026-10-04T23:27:44.027797+00:00",
+  "corpus_snapshot": {
+    "chunks": 2969,
+    "documents": 10,
+    "node_text_sha256": "d1d26e6c86da6178ff714da2d05d083bd8d4ffa48b8a67734cd2cab4582537bf"
+  },
+  "items": [
+    {
+      "id": "d0856522-f8a8-58cf-8a88-86ed15acd3b6",
+      "input": "Why did Becker’s group choose Mach 7 rather than Mach 10 as a goal for its proposed hypersonic research aircraft?",
+      "expected_output": "The group judged that Mach 7 would allow investigation across a very wide range of operating and heating conditions. It expected Mach 10 to require much more time and effort while adding little to research on stability, control, piloting, and structural heating.",
+      "metadata": {
+        "case_id": "nasa-ref-01",
+        "topic": "Becker group’s speed goal",
+        "question_type": "factual",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "dataset_role": "synthetic_gap_fill",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "codex/gpt-6-sol",
+        "generation_version": "1",
+        "evidence": [
+          {
+            "node_id": "f712b760-f1f7-4bc5-809e-565ea26650bd",
+            "quote": "Eventually, Becker and the group selected a goal of Mach 7, noting that this would permit investigation of \"extremely wide ranges of operating and heating conditions.\" By contrast, a Mach 10 vehicle \"would require a much greater expenditure of time and effort\" yet \"would add little in the fields of stability, control, piloting problems, and structural heating.\""
+          }
+        ],
+        "reference_context_ids": [
+          "f712b760-f1f7-4bc5-809e-565ea26650bd"
+        ],
+        "source_documents": [
+          {
+            "document_id": "nasa:9a800e9a2119fa47c9649ad459d31231a75141ce3b9bf2eca68a8bef3ee302df",
+            "title": "X-15 Extending the Frontiers of Flight",
+            "node_id": "f712b760-f1f7-4bc5-809e-565ea26650bd",
+            "chunk_index": 25,
+            "sha256": "24ac6765fc19b38a7723b9dd8207f07f09b801f286bb583951fd44e12323dbac"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false
+        }
+      }
+    },
+    {
+      "id": "01080a34-dbe8-50d4-99e8-38febedb20e6",
+      "input": "Why was automatic stability augmentation critical to controlling the X-15 during high-angle-of-attack reentry, and what aerodynamic change helped address the problem?",
+      "expected_output": "Above roughly 8 to 10 degrees angle of attack, a pilot trying to keep the wings level without stability augmentation could induce divergent roll-yaw oscillations. Simulator studies revealed the severity of this problem and the importance of the roll damper for reentry from above about 250,000 feet. Removing part of the lower vertical tail reduced adverse roll-yaw coupling and improved pilot control, even though it reduced high-angle-of-attack stability.",
+      "metadata": {
+        "case_id": "nasa-ref-02",
+        "topic": "X-15 reentry control",
+        "question_type": "explanatory",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "dataset_role": "synthetic_gap_fill",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "codex/gpt-6-sol",
+        "generation_version": "1",
+        "evidence": [
+          {
+            "node_id": "b2aa897e-c86f-4de1-a4bb-3dfb4a4ccf24",
+            "quote": "However, the coupling between roll-yaw motions was such that he must use some control to keep the wings level, and without stability-augmentation at angles of attack above 8 to 10 degrees, any pilot control induced roll-yaw oscillations that diverged until the airplane was out of control."
+          },
+          {
+            "node_id": "b2aa897e-c86f-4de1-a4bb-3dfb4a4ccf24",
+            "quote": "Not until flight-simulator studies began extensively probing this reagion was the magnitude of the problem revealed. It illuminated the critical importance of the roll-damper for reentry flight from altitudes above about 250 000 feet."
+          },
+          {
+            "node_id": "b2aa897e-c86f-4de1-a4bb-3dfb4a4ccf24",
+            "quote": "The lessening of adverse roll by removing part of the lower vertical tail has been discussed. Significantly, this change reduces stability by about half at high angle of attack, yet it improves pilot control."
+          }
+        ],
+        "reference_context_ids": [
+          "b2aa897e-c86f-4de1-a4bb-3dfb4a4ccf24"
+        ],
+        "source_documents": [
+          {
+            "document_id": "nasa:db97f0cfdfa0bb0c7084b994be46ce4a3bdac304dba6303b426160b196354fd1",
+            "title": "X-15 Research Results",
+            "node_id": "b2aa897e-c86f-4de1-a4bb-3dfb4a4ccf24",
+            "chunk_index": 47,
+            "sha256": "e0c283d720bdead1d731516da66b10b2d5feb5dcf793ca609b43a4d04a06e247"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false
+        }
+      }
+    },
+    {
+      "id": "e3916143-ed1a-570b-97dd-17e6bfe52383",
+      "input": "In the pressure-suit terminology described in Dressing for Altitude, how do partial-pressure and full-pressure suits apply protective pressure to the wearer?",
+      "expected_output": "A partial-pressure suit applies mechanical pressure against the skin; pressure breathing and the suit’s counter-pressure allow the wearer to exhale at extreme altitudes. A full-pressure suit instead applies gas pressure against the skin, creating a small artificial environment in which the wearer can breathe more or less normally.",
+      "metadata": {
+        "case_id": "nasa-ref-03",
+        "topic": "Aviation pressure-suit design",
+        "question_type": "factual",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "dataset_role": "synthetic_gap_fill",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "codex/gpt-6-sol",
+        "generation_version": "1",
+        "evidence": [
+          {
+            "node_id": "0876705a-43ff-49bc-9e14-978a4b0bbc2f",
+            "quote": "As ultimately defined, a partial-pressure suit protects its occupant through the application of mechanical pressure against the skin, all of which may or may not be covered (the head, hands, and feet were often bare in early suits)."
+          },
+          {
+            "node_id": "0876705a-43ff-49bc-9e14-978a4b0bbc2f",
+            "quote": "Pressure breathing is a key part of any partial-pressure suit, which provides sufficient counter-pressure to allow exhalation at extreme altitudes. On the other hand, the full-pressure suit offers protection by applying gas pressure against the skin, creating a mini artificial environment in which the occupant can breathe, more or less, normally."
+          }
+        ],
+        "reference_context_ids": [
+          "0876705a-43ff-49bc-9e14-978a4b0bbc2f"
+        ],
+        "source_documents": [
+          {
+            "document_id": "nasa:e36086f77952f47b7643ee650e60dbcd5312f6dd6567be0587818ea53f381445",
+            "title": "Dressing for Altitude",
+            "node_id": "0876705a-43ff-49bc-9e14-978a4b0bbc2f",
+            "chunk_index": 95,
+            "sha256": "9d499710f0d3e4f080bfd7630c12ec10efd4465415041c73e66cda4a07b56351"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false
+        }
+      }
+    },
+    {
+      "id": "6c2ea632-dcf1-52b2-b253-d10c56e0da8f",
+      "input": "Why did Langley’s Spin Tunnel tests of planetary-entry capsules require attention to scaling for descent in the Martian atmosphere, and what solution did researchers reach?",
+      "expected_output": "Earlier piloted-capsule research used Earth’s gravitational field for both models and full-scale vehicles, whereas Martian descent involved a different gravitational field and a thinner atmosphere that made scaled descent rates challenging to simulate. Researchers concluded that the dynamic-model scaling laws need not change: they could account for the gravitational difference when converting model-scale results to full-scale values.",
+      "metadata": {
+        "case_id": "nasa-ref-04",
+        "topic": "Dynamic scaling for planetary-entry capsules",
+        "question_type": "explanatory",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "dataset_role": "synthetic_gap_fill",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "codex/gpt-6-sol",
+        "generation_version": "1",
+        "evidence": [
+          {
+            "node_id": "a4c369f6-ab68-4aff-96a9-914fbcc9c5cd",
+            "quote": "Simulation of this scenario required consideration of new scaling procedures for dynamic models, becaused the piloted capsule research just discussed was conducted in the Earth's gravitational field, which was common to both the models and the full-scale articles. In addition, the thinner atmosphere of Mars represented a challenge in simulating a scaled rate of descent."
+          },
+          {
+            "node_id": "a4c369f6-ab68-4aff-96a9-914fbcc9c5cd",
+            "quote": "After studies of the simulation requirements, it was concluded that the scaling laws used for dynamic models would not have to be changed, and that the correction in results for the different gravitational fields could be applied when the data were converted from model-scale to full-scale values."
+          }
+        ],
+        "reference_context_ids": [
+          "a4c369f6-ab68-4aff-96a9-914fbcc9c5cd"
+        ],
+        "source_documents": [
+          {
+            "document_id": "nasa:02a00eb3b6bb87b300d10088a96ed4b98b073ef3e3f79c845d8e3f33d29ea5be",
+            "title": "Modeling Flight",
+            "node_id": "a4c369f6-ab68-4aff-96a9-914fbcc9c5cd",
+            "chunk_index": 45,
+            "sha256": "35f45848efed066919d4d67a08f655dc48c08e7d8717e2dd5b70ae093293579c"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false
+        }
+      }
+    },
+    {
+      "id": "fa59b32d-4640-5072-af1d-815ba9c79eee",
+      "input": "Who was the chief designer of the NASA seal and meatball insignia implemented in 1959, and which organization assisted with their final development and presidential approval process?",
+      "expected_output": "James J. Modarelli of NASA’s Lewis Research Center was the chief designer. The Heraldic Branch of the Army Office of the Quartermaster General assisted with the final emblems and the presidential approval process.",
+      "metadata": {
+        "case_id": "nasa-ref-05",
+        "topic": "Creation of NASA’s seal and insignia",
+        "question_type": "factual",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "dataset_role": "synthetic_gap_fill",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "codex/gpt-6-sol",
+        "generation_version": "1",
+        "evidence": [
+          {
+            "node_id": "1b87c7ef-0b46-4ba5-9784-21fe1886f4e5",
+            "quote": "The logos, which include symbols representing the space and aeronautics missions of NASA, were implemented in 1959"
+          },
+          {
+            "node_id": "1b87c7ef-0b46-4ba5-9784-21fe1886f4e5",
+            "quote": "James J. Modarelli, head of the Research Reports Division at the NASA Lewis Research Center (now the NASA Glenn Research Center), was the chief designer of the NASA seal and meatball insignia."
+          },
+          {
+            "node_id": "1b87c7ef-0b46-4ba5-9784-21fe1886f4e5",
+            "quote": "He was assisted by the Heraldic Branch of the Army Office of the Quartermaster General (now the Army Institute of Heraldry) in the development of the final emblems and the presidential approval process."
+          }
+        ],
+        "reference_context_ids": [
+          "1b87c7ef-0b46-4ba5-9784-21fe1886f4e5"
+        ],
+        "source_documents": [
+          {
+            "document_id": "nasa:fadac78b6ad701b705b002860a3b12cf02cd978c82f8e0db9d3aca669798a45a",
+            "title": "Emblems of Exploration",
+            "node_id": "1b87c7ef-0b46-4ba5-9784-21fe1886f4e5",
+            "chunk_index": 34,
+            "sha256": "aa3e639eddb39680f38aeca6de936687e2904b0b60fba24b2e051e250610f978"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false
+        }
+      }
+    },
+    {
+      "id": "521381e9-d4b8-5c8c-b4ee-141a983a0558",
+      "input": "How did the 2003 Columbia disaster reshape Sean O’Keefe’s approach to a post-Shuttle human-spaceflight goal, and what budget strategy accompanied the goal announced in January 2004?",
+      "expected_output": "After Columbia and the accident board’s call for a significant goal beyond the Space Station, O’Keefe shifted from avoiding destination-driven goals to promoting Moon-Mars-and-beyond after Bush’s January 2004 announcement. He transformed an existing White House body into a high-level interagency group that proposed a return to the Moon by 2020; Bush added Mars. The budget strategy projected falling Shuttle expenses as successor spending rose, kept new-system cost projections vague, and emphasized the Moon rather than Mars to avoid sticker shock and convey a pay-as-you-go image. These were policy and budget projections, not demonstrated outcomes.",
+      "metadata": {
+        "case_id": "nasa-ref-06",
+        "topic": "Post-Columbia space policy",
+        "question_type": "explanatory",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "dataset_role": "synthetic_gap_fill",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "codex/gpt-6-sol",
+        "generation_version": "1",
+        "evidence": [
+          {
+            "node_id": "e7616139-0193-4530-85ec-0835dac1f85d",
+            "quote": "Whatever goals O'Keefe had in 2002 were now on hold and subject to change."
+          },
+          {
+            "node_id": "e7616139-0193-4530-85ec-0835dac1f85d",
+            "quote": "The Columbia Accident Investigation Board helped him think big by stating that NASA needed a significant goal-worthy of risking human life-beyond the Space Station."
+          },
+          {
+            "node_id": "e7616139-0193-4530-85ec-0835dac1f85d",
+            "quote": "He transformed it into an interagency group with high-ranking members that met periodically and behind closed doors. The group came up with the return to the Moon by 2020 as a goal. Bush himself added Mars, perhaps with a nod to his father's failed Moon-Mars program."
+          },
+          {
+            "node_id": "e7616139-0193-4530-85ec-0835dac1f85d",
+            "quote": "O'Keefe then hammered out a budget agreement with his old colleagues at OMB that appeared plausible at the time: the Shuttle's expenses would go down as expenditures for a successor went up."
+          },
+          {
+            "node_id": "e7616139-0193-4530-85ec-0835dac1f85d",
+            "quote": "once Bush announced his decision in January 2004, he was trying to sell a Moon-Mars-and-beyond goal!"
+          },
+          {
+            "node_id": "e7616139-0193-4530-85ec-0835dac1f85d",
+            "quote": "He elevated and altered an existing body in the White House that was meeting to consider options for a post- Columbia piloted space program. He transformed it into an interagency group with high-ranking members that met periodically and behind closed doors. The group came up with the return to the Moon by 2020 as a goal. Bush himself added Mars, perhaps with a nod to his father's failed Moon-Mars program. O'Keefe then hammered out a budget agreement with his old colleagues at OMB that appeared plausible at the time: the Shuttle's expenses would go down as expenditures for a successor went up. In 2010, the Shuttle would complete its work on the Space Station and be retired; in 2014, its successor would come on line. A master budgeter, O'Keefe kept projections of expenses for the new technological system vague. The Moon got emphasis, not Mars. The \"sticker-shock\" price that killed the SEI under the first Bush was not repeated under his son."
+          },
+          {
+            "node_id": "e7616139-0193-4530-85ec-0835dac1f85d",
+            "quote": "It was ironic. O'Keefe had come in eschewing destination-driven goals and now, once Bush announced his decision in January 2004, he was trying to sell a Moon-Mars-and-beyond goal!"
+          },
+          {
+            "node_id": "e7616139-0193-4530-85ec-0835dac1f85d",
+            "quote": "The budget strategy, whatever its merit or demerit, conveyed the image of a pay-as-you-go philosophy instead of the SEI's half-trillion price tag."
+          }
+        ],
+        "reference_context_ids": [
+          "e7616139-0193-4530-85ec-0835dac1f85d"
+        ],
+        "source_documents": [
+          {
+            "document_id": "nasa:c2c9dd9a1821d0bc60e67189726ac6fde8f41f21ce01db21f2320919a8522484",
+            "title": "NASA's First 50 Years: Historical Perspectives",
+            "node_id": "e7616139-0193-4530-85ec-0835dac1f85d",
+            "chunk_index": 41,
+            "sha256": "f6e72727682891649e67c427da7febe9898b22eea2db4f544e13d3b8197058b5"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false
+        }
+      }
+    },
+    {
+      "id": "17f6fd9c-7574-56ee-873c-320ec92d4045",
+      "input": "In the EET Nacelle Aerodynamic and Inertial Loads (NAIL) program, under what flight conditions did tests find the greatest engine flight loads?",
+      "expected_output": "The test flights found the greatest flight loads, or wear, at low speeds, high angles of attack, and high engine airflow—conditions most typical of takeoff. The finding informed later nacelle redesigns intended to better withstand wear during those periods of flight.",
+      "metadata": {
+        "case_id": "nasa-ref-07",
+        "topic": "NAIL engine flight loads",
+        "question_type": "factual",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "dataset_role": "synthetic_gap_fill",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "codex/gpt-6-sol",
+        "generation_version": "1",
+        "evidence": [
+          {
+            "node_id": "d6104520-8eef-4579-b5d2-d9097daa4670",
+            "quote": "The test flights revealed that the highest \"flight loads,\" or wear, occurred at low speeds, high angles of attack, and high engine airflow, conditions most typically occurring at takeoff."
+          },
+          {
+            "node_id": "d6104520-8eef-4579-b5d2-d9097daa4670",
+            "quote": "The conclusions served as the basis for future nacelle redesigns that would have a greater ability to withstand flight-load wear and tear, specifically during these periods of flight."
+          }
+        ],
+        "reference_context_ids": [
+          "d6104520-8eef-4579-b5d2-d9097daa4670"
+        ],
+        "source_documents": [
+          {
+            "document_id": "nasa:e9977f69f5d760de6de9ba2b0febd0df1c8798a08c66e1d299357f5d6842a02d",
+            "title": "The Apollo of Aeronautics",
+            "node_id": "d6104520-8eef-4579-b5d2-d9097daa4670",
+            "chunk_index": 29,
+            "sha256": "c2f92494717124cd7a1cc05e272d9d3e5428c1e296a69694fe8f2ca3517f6376"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false
+        }
+      }
+    },
+    {
+      "id": "1221203b-9c77-5aba-aa3e-667336106fe7",
+      "input": "Why was Langley's 1964 SCAT-15F supersonic transport wing revised, and what changes made the configuration more acceptable?",
+      "expected_output": "Although the fixed-wing SCAT-15F achieved a lift-to-drag ratio of 9.3 at Mach 2.6, it had serious low-speed pitch-up and deep-stall tendencies. Researchers revised it with leading-edge flaps, wing notches, Fowler flaps that increased area and camber, and a small horizontal tail; together, these made it a more acceptable planform.",
+      "metadata": {
+        "case_id": "nasa-ref-08",
+        "topic": "SCAT-15F wing development",
+        "question_type": "explanatory",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "dataset_role": "synthetic_gap_fill",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "codex/gpt-6-sol",
+        "generation_version": "1",
+        "evidence": [
+          {
+            "node_id": "1544cb76-012d-465e-b99c-71615bf254ad",
+            "quote": "SCAT-15F had an incredible lift-to-drag ratio of 9.3 at Mach 2.6, well beyond what previous analysis and thought had deemed possible, though it also had serious low-speed pitch-up and deep-stall tendencies that triggered intensive investigations by researchers using the Langley Full-Scale Tunnel."
+          },
+          {
+            "node_id": "1544cb76-012d-465e-b99c-71615bf254ad",
+            "quote": "Out of this came a revised SCAT-15F configuration, with leading edge flaps, wing notches, area-and-camber-increasing Fowler flaps, and a small, horizontal tail, all of which worked to make it a much more acceptable planform."
+          },
+          {
+            "node_id": "1544cb76-012d-465e-b99c-71615bf254ad",
+            "quote": "In 1964, a Langley team comprised of Harry Carlson, Roy Harris, Ed McLean, Wilbur Middleton, and A. Warner Robins derived a fixed wing variant of the variable-sweep SCAT-15, generating an elegant slender arrow wing called the SCAT-15F."
+          }
+        ],
+        "reference_context_ids": [
+          "1544cb76-012d-465e-b99c-71615bf254ad"
+        ],
+        "source_documents": [
+          {
+            "document_id": "nasa:049c6dc4b5c43fc9d0906aff0801b90f0878d292deacd1ee07d2cf835ee7b7b0",
+            "title": "NASA’s Contributions To Aeronautics - Volume 1",
+            "node_id": "1544cb76-012d-465e-b99c-71615bf254ad",
+            "chunk_index": 32,
+            "sha256": "b55b9566ad0b377e1875188cf38a1ba4b88bf83a0e85ea0ae8a204974cdc677b"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false
+        }
+      }
+    },
+    {
+      "id": "663a375b-f677-544a-896a-2f8488a14928",
+      "input": "Under the FAA’s 1988 wind-shear detection requirement, when were commercial airlines generally required to install devices, and what extension was granted to American, Northwest, and Continental?",
+      "expected_output": "Commercial airlines were generally required to install wind-shear detection devices by the end of 1993. The FAA extended the deadline to 1995 for American, Northwest, and Continental because they were already testing predictive systems and needed time for refinement and certification.",
+      "metadata": {
+        "case_id": "nasa-ref-09",
+        "topic": "FAA wind-shear detection deadlines",
+        "question_type": "factual",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "dataset_role": "synthetic_gap_fill",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "codex/gpt-6-sol",
+        "generation_version": "1",
+        "evidence": [
+          {
+            "node_id": "e71c7766-1285-4971-9605-1c6270f71612",
+            "quote": "Langley's success in pursuing both enabled the FAA to decree in 1988 that all commercial airline carriers were required to install wind shear detection devices by the end of 1993."
+          },
+          {
+            "node_id": "e71c7766-1285-4971-9605-1c6270f71612",
+            "quote": "For American, Northwest, and Continental-three airlines already testing predictive systems capable of detecting wind shear before an aircraft flew into it-the FAA extended its deadline to 1995, to permit refinement and certification of these more demanding and potentially more valuable sensors."
+          }
+        ],
+        "reference_context_ids": [
+          "e71c7766-1285-4971-9605-1c6270f71612"
+        ],
+        "source_documents": [
+          {
+            "document_id": "nasa:346ee0eb03ba002e82423a8215212612f9cd9c5da9780079c7111bb4a595bce3",
+            "title": "NASA’s Contributions To Aeronautics - Volume 2",
+            "node_id": "e71c7766-1285-4971-9605-1c6270f71612",
+            "chunk_index": 16,
+            "sha256": "ac4e2d5e0aa0e8470ead30892263c4d858a97c0a91c264a0bec58b49b5e72aaf"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false
+        }
+      }
+    },
+    {
+      "id": "05250176-6f86-5885-aaf9-5740f9acd44e",
+      "input": "Why did short-coupled pitch controls pose a problem during takeoff and landing for the blended wing-body design described in the X-48 history?",
+      "expected_output": "The pitch controls had a shorter lever arm to the aircraft’s center of gravity than those of a conventional long-fuselage aircraft. With its instantaneous center of rotation well ahead of the airplane, a pitch-up command could initially make the blended wing-body descend before increased angle of attack enabled it to climb. This flightpath sag meant the pilot would have to begin takeoff rotation or landing flare earlier; ground effects made the takeoff problem greater.",
+      "metadata": {
+        "case_id": "nasa-ref-10",
+        "topic": "Blended wing-body pitch control",
+        "question_type": "explanatory",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "dataset_role": "synthetic_gap_fill",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "codex/gpt-6-sol",
+        "generation_version": "1",
+        "evidence": [
+          {
+            "node_id": "64c884b6-d7a1-4af2-9862-ce1e1d8e7029",
+            "quote": "The BWB's pitch controls had a shorter lever arm to the vehicle's center of gravity than on a conventional aircraft configuration with a long fuselage extending aft of the wing and sprouting a tail group."
+          },
+          {
+            "node_id": "64c884b6-d7a1-4af2-9862-ce1e1d8e7029",
+            "quote": "Airplanes with short-coupled pitch controls (and especially flying wings) have an instantaneous center of rotation that is well ahead of the airplane. A pitch command results in the airplane rotating in pitch about this point. When the point is well ahead of the airplane, the airplane descends as it pitches up until the increased angle of attack enables the airplane to climb."
+          },
+          {
+            "node_id": "64c884b6-d7a1-4af2-9862-ce1e1d8e7029",
+            "quote": "introducing an undesirable \"sagging\" of the BWB's flightpath during takeoff and landing, causing the pilot to have to initiate the takeoff rotation and landing flare earlier in order to reach the same \"end state\" as a conventional aircraft."
+          },
+          {
+            "node_id": "64c884b6-d7a1-4af2-9862-ce1e1d8e7029",
+            "quote": "This effect is an even greater problem during takeoff because ground effects amplify the loss of lift."
+          }
+        ],
+        "reference_context_ids": [
+          "64c884b6-d7a1-4af2-9862-ce1e1d8e7029"
+        ],
+        "source_documents": [
+          {
+            "document_id": "nasa:be709d1fc040776f002a9ed602f28137cffe386845866c8044dac7ef1fbe34d1",
+            "title": "Beyond Tube-and-Wing: The X-48 Blended Wing-Body and NASA's Quest to Reshape Future Transport Aircraft",
+            "node_id": "64c884b6-d7a1-4af2-9862-ce1e1d8e7029",
+            "chunk_index": 50,
+            "sha256": "bf94081a6568072d5b1434d25d2d33b3de38a06b4cc1d2fb448b459dc8659109"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false
+        }
+      }
+    },
+    {
+      "id": "46efec84-ed1b-5abf-b8d6-cef821ea8b65",
+      "input": "How did heating and load concerns in Becker and Korycinski’s proposed Mach 7 reentry analysis compare with those reported for actual X-15 suborbital reentries?",
+      "expected_output": "In the proposed Mach 7 reentry analysis, low angles of attack appeared to produce disastrous heating and dynamic pressures above structural limits; Becker and Korycinski reasoned that a higher angle of attack and greater drag would start deceleration in thinner air and reduce peak pressures and heating. The account of actual X-15 suborbital reentries says aerodynamic heating was not an important factor, but pullout loads approached structural limits as reentries began at higher altitudes. This compares a proposed high-speed analysis with the conditions of reported X-15 flights; it does not establish that the proposed Mach 7 heating problem was solved in flight.",
+      "metadata": {
+        "case_id": "nasa-ref-11",
+        "topic": "Proposed reentry heating versus X-15 flight dynamics",
+        "question_type": "multi_source_comparison",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "dataset_role": "synthetic_gap_fill",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "codex/gpt-6-sol",
+        "generation_version": "1",
+        "evidence": [
+          {
+            "node_id": "82555e89-d07a-49cd-af9e-7f24c16b112a",
+            "quote": "At Mach 7, reentry at low angles of attack appeared impossible because of disastrous heating loads. In addition, the dynamic pressures quickly exceeded, by large margins, the limit of 1,000 pounds per square foot (psf) set by structural demands. New tests of the force relationships in the 11-inch tunnel provided Becker and Korycinski with a surprising solution to this problem: if the angle of attack and the associated drag were increased, deceleration would begin at a higher altitude. Slowing down in the thinner (lower-density) atmosphere made the heat-transfer problem much less severe."
+          },
+          {
+            "node_id": "b2aa897e-c86f-4de1-a4bb-3dfb4a4ccf24",
+            "quote": "At suborbital speeds, the X-15's reentry differs in many respects from the reentry, at near-orbital speeds, of a ballistic capsule."
+          },
+          {
+            "node_id": "b2aa897e-c86f-4de1-a4bb-3dfb4a4ccf24",
+            "quote": "The X-15's reentry is made at speeds at which aerodynamic heating is not an important factor. Had this not been the case, its reentry would have involved much more serious problems."
+          },
+          {
+            "node_id": "b2aa897e-c86f-4de1-a4bb-3dfb4a4ccf24",
+            "quote": "They also produce more rapid change in the pilot's control sensitivity and the plane's dynamic response, while superimposing oscillations on the already high pullout forces required to keep from dipping too far into the corridor and exceeding the air-pressure limits. Another difficulty in returning from the higher altitudes is that the airplane approaches the structural design limits during pullout."
+          },
+          {
+            "node_id": "82555e89-d07a-49cd-af9e-7f24c16b112a",
+            "quote": "In other words, Becker and Korycinski surmised, by forcing deceleration to occur sooner, the increased drag associated with the high angle of attack would significantly reduce the aircraft's exposure to peak dynamic pressure and high heating rates."
+          }
+        ],
+        "reference_context_ids": [
+          "82555e89-d07a-49cd-af9e-7f24c16b112a",
+          "b2aa897e-c86f-4de1-a4bb-3dfb4a4ccf24"
+        ],
+        "source_documents": [
+          {
+            "document_id": "nasa:9a800e9a2119fa47c9649ad459d31231a75141ce3b9bf2eca68a8bef3ee302df",
+            "title": "X-15 Extending the Frontiers of Flight",
+            "node_id": "82555e89-d07a-49cd-af9e-7f24c16b112a",
+            "chunk_index": 26,
+            "sha256": "b652ce4523feb75d467aba4b6273c757380809d11063c2e9cb6e1d2c3d43d64b"
+          },
+          {
+            "document_id": "nasa:db97f0cfdfa0bb0c7084b994be46ce4a3bdac304dba6303b426160b196354fd1",
+            "title": "X-15 Research Results",
+            "node_id": "b2aa897e-c86f-4de1-a4bb-3dfb4a4ccf24",
+            "chunk_index": 47,
+            "sha256": "e0c283d720bdead1d731516da66b10b2d5feb5dcf793ca609b43a4d04a06e247"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false
+        }
+      }
+    },
+    {
+      "id": "f502bb8d-9074-5ad5-ac10-7cfa31d9e556",
+      "input": "How do Langley’s Gemini and Apollo capsule tests illustrate the general value of free-flight model testing for identifying and addressing flight-dynamics problems?",
+      "expected_output": "Free-flight model testing can reveal potentially serious behavior early enough to inform design changes or preparations for full-scale tests. In Langley’s capsule studies, the Gemini model oscillated, tumbled, or spun, while the blunt-end-forward Apollo model showed violent gyrations; drogue parachutes stopped or stabilized those motions in the reported subsonic tests. The capsule results thus provide concrete examples of the broader method’s ability to identify instability and evaluate a response, not proof of how the full-scale capsules ultimately performed.",
+      "metadata": {
+        "case_id": "nasa-ref-12",
+        "topic": "Free-flight models and capsule stability",
+        "question_type": "multi_source_comparison",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "dataset_role": "synthetic_gap_fill",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "codex/gpt-6-sol",
+        "generation_version": "1",
+        "evidence": [
+          {
+            "node_id": "790dad66-f993-4f8d-bc3d-ced631881732",
+            "quote": "The results of free flight testing are extremely valuable during aerospace vehicle development programs because potentially undesirable or even catastrophic behavior can be identified at an early design stage, permitting modifications to be incorporated into the design for satisfactory characteristics. In addition, the data provide awareness and guidance to test and evaluation organizations of potential problems in preparation for and during subsequent flight tests of the full-scale vehicle."
+          },
+          {
+            "node_id": "a4c369f6-ab68-4aff-96a9-914fbcc9c5cd",
+            "quote": "For example, the Gemini capsule model was unstable; it would at various times oscillate, tumble, or spin about a vertical axis, with its symmetrical axis tilted as much as 90 degrees from the vertical. However, the deployment of a drogue parachute during any spinning or tumbling motions quickly terminated these unstable motions at subsonic speeds."
+          },
+          {
+            "node_id": "a4c369f6-ab68-4aff-96a9-914fbcc9c5cd",
+            "quote": "The Apollo capsule with blunt end forward was dynamically unstable and displayed violent gyrations, including large oscillations, tumbling, and spinning motions. With the apex end forward, the capsule was dynamically stable and would trim at an angle of attack of about 40 degrees and glide in large circles. Once again, the use of a drogue parachute stabilized the capsule"
+          },
+          {
+            "node_id": "a4c369f6-ab68-4aff-96a9-914fbcc9c5cd",
+            "quote": "Meanwhile, at Langley, researchers in the Spin Tunnel were conducting dynamic stability investigations of the Mercury, Gemini, and Apollo capsules in vertically descending subsonic flight."
+          }
+        ],
+        "reference_context_ids": [
+          "790dad66-f993-4f8d-bc3d-ced631881732",
+          "a4c369f6-ab68-4aff-96a9-914fbcc9c5cd"
+        ],
+        "source_documents": [
+          {
+            "document_id": "nasa:02a00eb3b6bb87b300d10088a96ed4b98b073ef3e3f79c845d8e3f33d29ea5be",
+            "title": "Modeling Flight",
+            "node_id": "790dad66-f993-4f8d-bc3d-ced631881732",
+            "chunk_index": 5,
+            "sha256": "e9cbcf505fb5cd63f9edc548d3360f695d007a4cb6fcbf6f2e4d53ac6f8bbf41"
+          },
+          {
+            "document_id": "nasa:02a00eb3b6bb87b300d10088a96ed4b98b073ef3e3f79c845d8e3f33d29ea5be",
+            "title": "Modeling Flight",
+            "node_id": "a4c369f6-ab68-4aff-96a9-914fbcc9c5cd",
+            "chunk_index": 45,
+            "sha256": "35f45848efed066919d4d67a08f655dc48c08e7d8717e2dd5b70ae093293579c"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false
+        }
+      }
+    },
+    {
+      "id": "fb308b33-6924-5af6-b468-c40524993189",
+      "input": "Give me a step-by-step sourdough bread recipe with ingredient weights and baking temperatures.",
+      "expected_output": "I cannot provide a source-grounded sourdough recipe from this NASA aerospace-history corpus. The supplied material does not support ingredient weights or baking temperatures.",
+      "metadata": {
+        "case_id": "nasa-ref-13",
+        "topic": "cooking",
+        "question_type": "out_of_domain",
+        "answerability": "out_of_domain",
+        "expected_behavior": "abstain",
+        "metric_exclusion_reason": "Behavioral edge case; score abstention/premise correction separately from answerable reference precision, recall and factual-correctness aggregates.",
+        "dataset_role": "edge_case",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "Codex assistant",
+        "generation_version": "1",
+        "evidence": [],
+        "reference_context_ids": [],
+        "source_documents": [],
+        "corpus_audit": {
+          "search_terms": [
+            "sourdough"
+          ],
+          "matching_chunks": 0,
+          "limitation": "Scope is NASA aerospace history; no claim that the request is unsafe."
+        },
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false
+        }
+      }
+    },
+    {
+      "id": "6aef3af6-368c-5b0e-a550-d9750b81d106",
+      "input": "What budget has NASA approved for blended-wing-body flight research in fiscal year 2027?",
+      "expected_output": "The available historical NASA documents do not establish an approved fiscal-year 2027 budget for blended-wing-body flight research. I cannot give a supported amount or infer one from older program costs.",
+      "metadata": {
+        "case_id": "nasa-ref-14",
+        "topic": "current_research_funding",
+        "question_type": "in_domain_missing_evidence",
+        "answerability": "in_domain_missing_evidence",
+        "expected_behavior": "abstain",
+        "metric_exclusion_reason": "Behavioral edge case; score abstention/premise correction separately from answerable reference precision, recall and factual-correctness aggregates.",
+        "dataset_role": "edge_case",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "Codex assistant",
+        "generation_version": "1",
+        "evidence": [],
+        "reference_context_ids": [],
+        "source_documents": [],
+        "corpus_audit": {
+          "search_pattern": "\\b2027\\b",
+          "matching_chunks": 0,
+          "corpus_chunks_searched": 2969,
+          "limitation": "No standalone 2027 appears in this frozen corpus; older contracts and design projections cannot answer the question. This does not imply no such budget exists elsewhere."
+        },
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false
+        }
+      }
+    },
+    {
+      "id": "729cfaa3-0373-54bf-8298-c94d616ff2cc",
+      "input": "Why were all seven Surveyor landers fully successful on the Moon?",
+      "expected_output": "The premise is incorrect: the source says seven Surveyor landers were sent from 1966 to 1968, but only five were fully successful. It does not support an explanation claiming that all seven succeeded.",
+      "metadata": {
+        "case_id": "nasa-ref-15",
+        "topic": "robotic_lunar_exploration",
+        "question_type": "false_premise",
+        "answerability": "answerable_correction",
+        "expected_behavior": "correct_premise",
+        "dataset_role": "edge_case",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "Codex assistant",
+        "generation_version": "1",
+        "evidence": [
+          {
+            "node_id": "6cff2609-916e-4876-9f88-adc3d68e242c",
+            "quote": "From 1966 to 1968, the Surveyor series sent seven automated landers, of which five were fully successful, to a large variety of sites."
+          }
+        ],
+        "reference_context_ids": [
+          "6cff2609-916e-4876-9f88-adc3d68e242c"
+        ],
+        "source_documents": [
+          {
+            "document_id": "nasa:c2c9dd9a1821d0bc60e67189726ac6fde8f41f21ce01db21f2320919a8522484",
+            "title": "NASA's First 50 Years: Historical Perspectives",
+            "node_id": "6cff2609-916e-4876-9f88-adc3d68e242c",
+            "chunk_index": 290,
+            "sha256": "567565353d383be8b8ac4ee1209f7c30e99b69e70b16dc096fbfed3e4ee43fe0"
+          }
+        ],
+        "corpus_audit": {
+          "limitation": "The quoted statement rebuts the premise; do not infer individual failure causes or repeat the unrelated Apollo 12 date error."
+        },
+        "scoring_note": "Has a factual correction reference; eligible for reference metrics, but report false-premise correction separately from ordinary answerable cases.",
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false
+        }
+      }
+    },
+    {
+      "id": "e9d64d2f-87a2-5e17-82e2-573ee01b9672",
+      "input": "How does NASA’s AirSTAR program investigate transport aircraft controllability?",
+      "expected_output": "NASA’s Airborne Subscale Transport Aircraft Research (AirSTAR) program is developing a powered free-flight model technique to investigate controllability options for multiengine commercial transport configurations in upset situations or after airframe or control system damage. The project focuses on the Generic Transport Model (GTM), a 5.5-percent dynamically scaled model of the Boeing 757. The GTM weighs about 55 pounds, has a 7-foot wingspan, is powered by model turbine engines, and has approach speeds of about 70 mph. Langley researchers have developed a computer-based powered-model capability supported by mobile vehicles equipped with sophisticated pilot stations, avionics equipment, and digital computers for control-law simulation and data acquisition. A special UAV runway at Wallops is planned for research operations. A phased series of flight projects, beginning with relatively low-cost, low-wing-loading models flown near Langley in Smithfield, Virginia, supports the development of pilot skills, instrumentation, and testing needed to reduce risk.",
+      "metadata": {
+        "case_id": "ragas-row-3",
+        "origin": "ragas_import",
+        "dataset_role": "ragas_import",
+        "question_type": "ragas_single_hop_specific",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "unknown_from_export",
+        "provenance": {
+          "source_file": "nasa-rag-testset-200-chunks-400.json",
+          "source_sha256": "31c176152807905aa7351227a6d8ba2023080da8809ab8b780a2db68052bc33e",
+          "row_index_zero_based": 3,
+          "synthesizer_name": "single_hop_specific_query_synthesizer",
+          "original_row": {
+            "user_input": "How does NASA’s AirSTAR program investigate transport aircraft controllability?",
+            "reference": "NASA’s Airborne Subscale Transport Aircraft Research (AirSTAR) program is developing a powered free-flight model technique to investigate controllability options for multiengine commercial transport configurations in upset situations or after airframe or control system damage. The project focuses on the Generic Transport Model (GTM), a 5.5-percent dynamically scaled model of the Boeing 757. The GTM weighs about 55 pounds, has a 7-foot wingspan, is powered by model turbine engines, and has approach speeds of about 70 mph. Langley researchers have developed a computer-based powered-model capability supported by mobile vehicles equipped with sophisticated pilot stations, avionics equipment, and digital computers for control-law simulation and data acquisition. A special UAV runway at Wallops is planned for research operations. A phased series of flight projects, beginning with relatively low-cost, low-wing-loading models flown near Langley in Smithfield, Virginia, supports the development of pilot skills, instrumentation, and testing needed to reduce risk.",
+            "persona_name": "Dr. Elena Marlow",
+            "query_style": "PERFECT_GRAMMAR",
+            "query_length": "SHORT",
+            "synthesizer_name": "single_hop_specific_query_synthesizer"
+          },
+          "edits": []
+        },
+        "reference_context_ids": [
+          "7563d955-7da9-4a3f-86e9-335c40584da4"
+        ],
+        "source_documents": [
+          {
+            "node_id": "7563d955-7da9-4a3f-86e9-335c40584da4",
+            "document_id": "nasa:02a00eb3b6bb87b300d10088a96ed4b98b073ef3e3f79c845d8e3f33d29ea5be",
+            "title": "Modeling Flight",
+            "chunk_index": 23,
+            "sha256": "ede22a0123b85d3959d6de668c17b9ac76815f275b5bc250f45ec9aa2c517f2d"
+          }
+        ],
+        "evidence": [
+          {
+            "node_id": "7563d955-7da9-4a3f-86e9-335c40584da4",
+            "quote": "F-15 spin research vehicle mounted to a pylon on its B-52 launch aircraft. The unpowered drop model was the first in a long line of remotely piloted subscale models and was used in conjunction with a piloted simulator at Dryden and a smaller F-15 drop model at Langley to define spin entry maneuvers for the F-15 aircraft.\nIn the early 1970s, Reed's work at Dryden expanded into a series of flight tests of powered and unpowered remotely piloted research vehicles (RPRVs). These activities, which included remote-control evaluations of subscale and full-scale test subjects, used a ground-based cockpit equipped with flight instruments and sensors typical of a representative full-scale airplane. These projects included the Hyper III lifting body and a three-eighths-scale dynamically scaled model of the F-15. The technique used for the F-15 model consisted of air launches of the test article from a B-52 and control by a pilot in a ground cockpit outfitted with a sophisticated control system.\n[22](#anchor-22-anchor-chp02)\nThe setup featured a digital uplink capability, a ground computer, a television monitor, and a telemetry system. This test technique in 1973 preceded Langley's development of similar sophistication. Initially, the model was recovered on its parachute in flight by helicopter midair snatch, but in later flights, the evaluation pilot landed it on skids. Over 50 flights were made with the F-15 Spin Research Vehicle. Results of Dryden's tests of the 23.5-foot-long model for spin entry research will also be discussed in a later section.\nLangley Powered Free-Flight Models\nIn addition to the powered free-flight wind tunnel models discussed earlier, NASA has used powered dynamically scaled models at Langley, Ames, and Dryden for investigations of flight dynamics issues for general-aviation aircraft, parawing vehicles, civil transports, and advanced aircraft configurations. In addition to its in-house research and development efforts and cooperative programs with its industry and military partners, NASA has also stimulated the use of powered dynamic models within the university community, greatly increasing the interest and engineering capabilities of students.\nFig 33- Robelen and Sundowner L-80-2853.tif\nNASA conducted research on the spinning characteristics of general aviation designs in the mid-1970s with powered radio-controlled dynamically scaled models using modified hobbyist-type gear. These dynamically scaled models were significantly heavier than conventional hobbyist radio-controlled models.\nAt Langley, outdoor powered models have been used in major programs focused on the development of military drones in support of DOD, dynamic stability and control studies of parawing utility vehicles and spacecraft, investigations of general-aviation stall/spin technology, and commercial transport recovery in large-attitude, out-of-control (\"upset\") situations. Most of these tests used the Plum Tree test area between 1962 and 1992 and simplified versions of the testing techniques previously described. As will be discussed, some of the testing sought to develop relatively inexpensive free-flight techniques that could be applied using modified hobbyist equipment.\n[23](#anchor-23-anchor-chp02)\nIn recent years, Langley has embarked on a sophisticated powered-model technique in support of its Aviation Safety program. The test objectives are to investigate controllability options for multiengine commercial transport-type configurations in upset situations or after airframe/control system damage.\nFig 34- AirStar.tif\nThe NASA AirSTAR program is developing a powered free-flight model technique to study upset recovery and other safety issues for commercial transport configurations. Flight tests of generic powered transport models are underway to minimize risk during studies of a scaled model of the test subject.\nThis project, known as the Airborne Subscale Transport Aircraft Research (AirSTAR) program,\n[24](#anchor-24-anchor-chp02)\nwill be discussed in the next chapter. As part of the activity, Langley researchers have developed a computer-based powered-model capability comparable to the drop-model operations discussed earlier. A special runway for unmanned aerial vehicle (UAV) operations at Wallops is to be used for research operations, and mobile vehicles transported to the site are equipped with sophisticated pilot stations, avionics equipment, and digital computers for simulation of control laws and data acquisition. The commercial transport models are large (with a 7-foot wingspan), dynamically scaled, and powered by state-of-the-art model turbine engines. The AirSTAR project is focused on a 5.5-percent dynamically scaled model of the Boeing 757 aircraft, referred to as the Generic Transport Model (GTM). The GTM vehicle weighs about 55 pounds, with approach speeds of about 70 mph. A multiyear developmental process has been underway to develop the pilot skills, instrumentation, and testing required for risk reduction. A phased series of flight projects are being conducted, beginning with relatively low-cost, low-wing-loading models flown near Langley in Smithfield, VA."
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false,
+          "context_mapping_normalization": "Remove only leading <N-hop> followed by blank line; stored original contexts unchanged."
+        }
+      }
+    },
+    {
+      "id": "5b3c831e-6314-58ca-8fac-8518aee14abe",
+      "input": "What did the Wallops rocket-powered model tests involving wings representative of the Douglas X-3 Stiletto reveal about roll control effectiveness at transonic speeds?",
+      "expected_output": "In a three-year period beginning in 1947, over 386 models were launched at Wallops to evaluate roll control effectiveness at transonic conditions. The tests included generic configurations and models with wings representative of the Douglas X-3 Stiletto, Douglas D-558-II Skyrocket, and Bell X-2 research aircraft. The results included pioneering measurements of a severe reduction in rolling effectiveness due to aeroelastic wing effects. They also documented a complete reversal of the intended roll control direction at transonic speeds, caused by the aerodynamic behavior of the wing trailing-edge angle.",
+      "metadata": {
+        "case_id": "ragas-row-4",
+        "origin": "ragas_import",
+        "dataset_role": "ragas_import",
+        "question_type": "ragas_single_hop_specific",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "unknown_from_export",
+        "provenance": {
+          "source_file": "nasa-rag-testset-200-chunks-400.json",
+          "source_sha256": "31c176152807905aa7351227a6d8ba2023080da8809ab8b780a2db68052bc33e",
+          "row_index_zero_based": 4,
+          "synthesizer_name": "single_hop_specific_query_synthesizer",
+          "original_row": {
+            "user_input": "What did the Wallops rocket-powered model tests involving wings representative of the Douglas X-3 Stiletto reveal about roll control effectiveness at transonic speeds?",
+            "reference": "In a three-year period beginning in 1947, over 386 models were launched at Wallops to evaluate roll control effectiveness at transonic conditions. The tests included generic configurations and models with wings representative of the Douglas X-3 Stiletto, Douglas D-558-II Skyrocket, and Bell X-2 research aircraft. The results included pioneering measurements of a severe reduction in rolling effectiveness due to aeroelastic wing effects. They also documented a complete reversal of the intended roll control direction at transonic speeds, caused by the aerodynamic behavior of the wing trailing-edge angle.",
+            "persona_name": "Dr. Elena Marlow",
+            "query_style": "PERFECT_GRAMMAR",
+            "query_length": "MEDIUM",
+            "synthesizer_name": "single_hop_specific_query_synthesizer"
+          },
+          "edits": []
+        },
+        "reference_context_ids": [
+          "a6c5b907-1562-4e2d-b8cb-9c3ecc1af1a7"
+        ],
+        "source_documents": [
+          {
+            "node_id": "a6c5b907-1562-4e2d-b8cb-9c3ecc1af1a7",
+            "document_id": "nasa:02a00eb3b6bb87b300d10088a96ed4b98b073ef3e3f79c845d8e3f33d29ea5be",
+            "title": "Modeling Flight",
+            "chunk_index": 30,
+            "sha256": "ccfde8e89fa818e409ec44cc1e87c40db37a45ce07b310ea80347349e1c348c6"
+          }
+        ],
+        "evidence": [
+          {
+            "node_id": "a6c5b907-1562-4e2d-b8cb-9c3ecc1af1a7",
+            "quote": "During the final model flight projects in the Free-Flight Tunnel in the mid-1950s, various Langley organizations teamed to quantify the effects of critical aerodynamic dynamic stability parameters on flying characteristics. These efforts included correlation of experimentally determined aerodynamic stability derivatives with theoretical predictions and comparisons of the results of qualitative free-flight tests with theoretical predictions of dynamic stability characteristics. In some cases, rate gyroscopes and servos were used to artificially vary the magnitudes of dynamic aerodynamic stability parameters, such as yawing moment caused by rolling.\n[8](#anchor-085-anchor-chp04)\nIn these studies, the free-flight model result served as a critical test of the validity of theory.\nHigh-Speed Research: Rocket-Propelled Models\nDuring World War II, tactical maneuvers pushed fighter operations into the relatively unknown realm of aerodynamic compressibility, where new stability and control problems emerged. High-speed dives from high altitudes by fighter pilots had resulted in potentially catastrophic phenomena characterized by excessive stick forces and loss of control in vertical dives. The onset of compressibility effects demanded new methods of analysis, and the NACA responded by developing applications of free-flight models to investigate dynamic stability and control characteristics at transonic and supersonic conditions. As mentioned earlier, in the 1940s, no wind tunnels had been developed that avoided the choking phenomenon that contaminated aerodynamic data measurements near Mach 1, and the NACA developed three alternate approaches to obtain transonic data. Langley used the drop-body, wing-flow, and rocket-model techniques to provide pioneering information on the transonic void.\nIn 1945, Langley began launching rocket-powered models at its Wallops flight research station to obtain transonic and supersonic information on the performance, stability, and control of generic and specific aircraft configurations. The scope and contributions of the Wallops rocket-powered model research programs for aircraft configurations, missiles, and airframe components covered an astounding number of technical areas, including aerodynamic performance, flutter, stability, control, heat transfer, automatic controls, boundary-layer control, inlet performance, ramjets, and separation behavior. Even a cursory discussion of these results far exceeds the intent of this book, which focuses on dynamic stability and control. The interested reader is, however, referred to the excellent detailed summary of the history and aeronautical contributions of the Wallops Island Flight Test Range by Joseph Shortal.\n[9](#anchor-084-anchor-chp04)\nIn addition to providing extensive data via telemetry in several technical disciplines for high-speed conditions, the rocket-powered model tests provided a remarkable amount of information on dynamic stability and control. For example, in just 3 years beginning in 1947, over 386 models were launched at Wallops to evaluate roll control effectiveness at transonic conditions. These tests included generic configurations as well as models with wings representative of the now-famous Douglas D-558-II Skyrocket, Douglas X-3 Stiletto, and Bell X-2 research aircraft. Results on roll control effectiveness at high speeds included pioneering measurements of a severe reduction in rolling effectiveness because of aeroelastic wing effects and the phenomenon in which a complete reversal of intended roll control direction occurred at transonic speeds caused by the aerodynamic behavior of the wing trailing-edge angle.\n[10](#anchor-083-anchor-chp04)\nFundamental studies of dynamic stability and control were also conducted with generic research models to study basic phenomena such as longitudinal trim changes, dynamic longitudinal stability, control-hinge moments, and aerodynamic damping in roll.\n[11](#anchor-082-anchor-chp04)\nStudies with models of the D-558-II also detected unexpected coupling of longitudinal and lateral oscillations, a problem that would subsequently prove to be common for configurations with long fuselages and relatively small wings.\n[12](#anchor-081-anchor-chp04)\nSimilar coupled motions caused great concern in the X-3 and F-100 aircraft development programs and spurred on numerous studies of the phenomenon known as inertial coupling.\nFig 42- Wallops Launches copy.tif\nModel of the Chance Vought F8U used by the Langley Pilotless Aircraft Research Division at its Wallops flight station in rocket-launched model tests to determine supersonic dynamic stability."
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false,
+          "context_mapping_normalization": "Remove only leading <N-hop> followed by blank line; stored original contexts unchanged."
+        }
+      }
+    },
+    {
+      "id": "a49bed9e-6bd2-500f-a356-b507015d9435",
+      "input": "From a flight-performance perspective, how did the F-106 Delta Dart compare with its F-102A predecessor in speed and propulsion?",
+      "expected_output": "The F-106 Delta Dart, produced by Convair from 1956 to 1960 as the follow-on version of the F-102A, was capable of twice the speed of the Dagger with its Pratt & Whitney J75 engine. The F-102A could cruise at 1,000 mph and used a J57 turbojet. The context identifies the F-106 as the primary air defense interceptor defending the continental United States up to the early 1980s.",
+      "metadata": {
+        "case_id": "ragas-row-24",
+        "origin": "ragas_import",
+        "dataset_role": "ragas_import",
+        "question_type": "ragas_single_hop_specific",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "unknown_from_export",
+        "provenance": {
+          "source_file": "nasa-rag-testset-200-chunks-400.json",
+          "source_sha256": "31c176152807905aa7351227a6d8ba2023080da8809ab8b780a2db68052bc33e",
+          "row_index_zero_based": 24,
+          "synthesizer_name": "single_hop_specific_query_synthesizer",
+          "original_row": {
+            "user_input": "From a flight-performance perspective, how did the F-106 Delta Dart compare with its F-102A predecessor in speed and propulsion?",
+            "reference": "The F-106 Delta Dart, produced by Convair from 1956 to 1960 as the follow-on version of the F-102A, was capable of twice the speed of the Dagger with its Pratt & Whitney J75 engine. The F-102A could cruise at 1,000 mph and used a J57 turbojet. The context identifies the F-106 as the primary air defense interceptor defending the continental United States up to the early 1980s.",
+            "persona_name": "Dr. Elena Mercer",
+            "query_style": "PERFECT_GRAMMAR",
+            "query_length": "MEDIUM",
+            "synthesizer_name": "single_hop_specific_query_synthesizer"
+          },
+          "edits": []
+        },
+        "reference_context_ids": [
+          "02f3bd2f-55d1-4874-81a9-04a61080bf7f"
+        ],
+        "source_documents": [
+          {
+            "node_id": "02f3bd2f-55d1-4874-81a9-04a61080bf7f",
+            "document_id": "nasa:049c6dc4b5c43fc9d0906aff0801b90f0878d292deacd1ee07d2cf835ee7b7b0",
+            "title": "NASA’s Contributions To Aeronautics - Volume 1",
+            "chunk_index": 70,
+            "sha256": "0403d01408c7cec5361dc7c4f12dd6242b59d236a55907c62f8b84776ebf4e75"
+          }
+        ],
+        "evidence": [
+          {
+            "node_id": "02f3bd2f-55d1-4874-81a9-04a61080bf7f",
+            "quote": "interceptors equipped Air Defense Command and United States Air Force in Europe squadrons during the critical period of the late 1950s and 1960s. The increase in performance was dramatic. The F-102A could cruise at 1,000 mph and at a ceiling of over 50,000 feet. It replaced three subsonic interceptor aircraft in the Air Force inventory-the North American F-86D Sabre, F-89 Scorpion, and F-94 Starfire-which were 600-650 mph aircraft with a 45,000-foot ceiling range. Besides speed and altitude, the F-102A was better equipped to face the Soviet Myasishchev Bison, Tupolev Bear, and Ilyushin Badger nuclear-armed bombers with a full complement of Hughes Falcon guided missiles and Mighty Mouse rockets. Convair incorporated the F-102A's armament in a drag-\nreducing internal weapons bay.\nWhen the F-102A entered operational service, the media made much of the fact that the F-102 \"almost ended up in the discard heap\" because of its \"difficulties wriggling its way through the sound barrier.\" With an area rule fuselage, the F-102A \"swept past the sonic problem.\" The downside to the F-102A's supersonic capability was the noise from its J57 turbojet. The Air Force regularly courted civic leaders from areas near Air Force bases through familiarization flights so that they would understand the mission and role of the F-102A.\n[[38]](#footnote-7767-38)\nNEW SI-89-11936.tif\nThe Air Force's F-102 got a whole new look after implementing Richard Whitcomb's area rule. At left is the YF-102 without the area rule, and at right is the new YF-102A version. NASA.\nConvair produced the follow-on version, the F-106 Delta Dart, from 1956 to 1960. The Dart was capable of twice the speed of the Dagger with its Pratt & Whitney J75 engine.\n[[39]](#footnote-7767-39)\nThe F-106 was the primary air defense interceptor defending the continental United States up to the early 1980s. Convair built upon its success with the F-102A and the F-106, two cornerstone aircraft in the Air Force's Century series of aircraft, and introduced more area rule aircraft: the XF2Y-1 Sea Dart and the B-58 Hustler.\n[[40]](#footnote-7767-40)\nThe YF-102/YF-102A exercise was valuable in demonstrating the importance of the area rule and of the NACA to the aviation industry and the military, especially when a major contract was at stake.\n[[41]](#footnote-7767-41)\nWhitcomb's revolutionary and intuitive idea enabled a new generation of supersonic military aircraft, and it spread throughout the industry. Like Convair, Chance Vought redesigned its F8U Crusader carrier-based interceptor with an area rule fuselage. The first production aircraft appeared in September 1956, and deliveries began in March 1957. Four months later, in July 1957, Marine Maj. John H. Glenn, Jr., as part of Project Bullet, made a recordbreaking supersonic transcontinental flight from Los Angeles to New York in 3 hours 23 minutes. Crusaders served in Navy and Marine fighter and reconnaissance squadrons throughout the 1960s and 1970s, with the last airframes leaving operational service in 1987.\n[[42]](#footnote-7767-42)"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false,
+          "context_mapping_normalization": "Remove only leading <N-hop> followed by blank line; stored original contexts unchanged."
+        }
+      }
+    },
+    {
+      "id": "9c786b1d-1adb-5e49-a5e5-60d8b185d9e8",
+      "input": "HSR program sonic boom flight-test concept: why replace the BQM-34E Firebee II with an F-5E?",
+      "expected_output": "Reviving an idea from the HSR program, Domenic Maglieri and colleagues at Eagle Aeronautics recommended a flight-test program using the BQM-34E Firebee II to demonstrate the Quiet Supersonic Platform sonic boom objectives. Northrop Grumman acquired the last remaining Firebee IIs from the Naval Air Weapons Station at Point Mugu, California, but determined that they were too old for testing. As an alternative, Northrop Grumman aerodynamicist David Graham recommended comparing sonic booms from different versions of the Northrop F-5. Maglieri then suggested modifications to an F-5E that could flatten its sonic boom signature. Based largely on the resulting F-5E Shaped Sonic Boom Demonstration proposal, DARPA selected Northrop Grumman in July 2001 over proposals from Boeing Phantom Works and Lockheed Martin Skunk Works.",
+      "metadata": {
+        "case_id": "ragas-row-33",
+        "origin": "ragas_import",
+        "dataset_role": "ragas_import",
+        "question_type": "ragas_single_hop_specific",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "unknown_from_export",
+        "provenance": {
+          "source_file": "nasa-rag-testset-200-chunks-400.json",
+          "source_sha256": "31c176152807905aa7351227a6d8ba2023080da8809ab8b780a2db68052bc33e",
+          "row_index_zero_based": 33,
+          "synthesizer_name": "single_hop_specific_query_synthesizer",
+          "original_row": {
+            "user_input": "HSR program sonic boom flight-test concept: why replace the BQM-34E Firebee II with an F-5E?",
+            "reference": "Reviving an idea from the HSR program, Domenic Maglieri and colleagues at Eagle Aeronautics recommended a flight-test program using the BQM-34E Firebee II to demonstrate the Quiet Supersonic Platform sonic boom objectives. Northrop Grumman acquired the last remaining Firebee IIs from the Naval Air Weapons Station at Point Mugu, California, but determined that they were too old for testing. As an alternative, Northrop Grumman aerodynamicist David Graham recommended comparing sonic booms from different versions of the Northrop F-5. Maglieri then suggested modifications to an F-5E that could flatten its sonic boom signature. Based largely on the resulting F-5E Shaped Sonic Boom Demonstration proposal, DARPA selected Northrop Grumman in July 2001 over proposals from Boeing Phantom Works and Lockheed Martin Skunk Works.",
+            "persona_name": "Dr. Elena Marlow",
+            "query_style": "WEB_SEARCH_LIKE",
+            "query_length": "MEDIUM",
+            "synthesizer_name": "single_hop_specific_query_synthesizer"
+          },
+          "edits": []
+        },
+        "reference_context_ids": [
+          "8f843718-e19c-4166-913f-916e6c26fee4"
+        ],
+        "source_documents": [
+          {
+            "node_id": "8f843718-e19c-4166-913f-916e6c26fee4",
+            "document_id": "nasa:049c6dc4b5c43fc9d0906aff0801b90f0878d292deacd1ee07d2cf835ee7b7b0",
+            "title": "NASA’s Contributions To Aeronautics - Volume 1",
+            "chunk_index": 147,
+            "sha256": "313a2f41ffe8574bfef5ed41f373fe0a8d16b9e05cef0831314f96f437911ddc"
+          }
+        ],
+        "evidence": [
+          {
+            "node_id": "8f843718-e19c-4166-913f-916e6c26fee4",
+            "quote": "This successful experiment marked the end of dedicated sonic boom flight-testing during the HSR program.\nBy late 1998, a combination of economic, technological, political, and budgetary problems (including NASA's cost overruns for the International Space Station) convinced Boeing to cut its support and the Administration of President Bill Clinton to terminate the HSR program at the end of FY 1999. Ironically, NASA's success in helping the aircraft industry develop quieter subsonic aircraft, which had the effect of moving the goalpost for acceptable airport noise, was one of the factors convincing Boeing to drop plans for the HSCT. Nevertheless, the HSR program was responsible for significant advances in technologies, techniques, and scientific knowledge, including a better understand of the sonic boom and ways to diminish it.\n[[179]](#footnote-7898-179)\nProof at Last: The Shaped Sonic Boom Demonstration\nAfter the HSR program dropped plans for an overland supersonic airliner, Domenic Maglieri compiled a NASA study of all known proposals for smaller supersonic aircraft intended for business customers.\n[[180]](#footnote-7898-180)\nIn 1998, one year after the drafting of this report, Richard Seebass (now with the University of Colorado) gave some lectures at NATO's von Kármán Institute in Belgium. He reflected on NASA's conclusion that a practical, commercial-sized supersonic transport would have a sonic boom that was not acceptable to enough people. On the other hand, he believed the recent high-speed research \"leads us to conclude that a small, appropriately designed supersonic business jet's sonic boom may be nearly inaudible outdoors and hardly discernible indoors.\" Such an airplane, he stated, \"appears to have a significant market . . . if . . . certifiable over most land areas.\"\n[[181]](#footnote-7898-181)\nAt the start of the new century, the prospects for a small supersonic aircraft received a shot in the arm from the Defense Advanced Research Projects Agency, well known for encouraging innovative technologies. DARPA received $7 million in funding starting in FY 2001 to explore design concepts for a Quiet Supersonic Platform (QSP)-an airplane that could have both military and civilian potential. Richard W. Wlezien, a NASA official on loan to DARPA as QSP program manager, wanted ideas that might lead to a Mach 2.4, 100,000-pound aircraft that \"won't rattle your windows or shake the china in your cabinet.\" It was hoped that a shaped sonic boom signature of no more than 0.3 psf would allow unrestricted operations over land. By the end of 2000, 16 companies and laboratories had been selected to participate in the QSP project, with the University of Colorado and Stanford University to work on sonic boom propagation and minimization.\n[[182]](#footnote-7898-182)\nSupport from NASA would include modeling expertise, wind tunnel facilities, and flight-test operations.\n17. q.SR71wF16XLvert.tif\nIn 1995, the Dryden Flight Research Center used an F-16XL to make detailed in-flight supersonic shock wave measurements as near as 80 feet from an SR-71. NASA.\nAlthough the later phase of the QSP program emphasized military requirements, its most publicized achievement was the Shaped Sonic Boom Demonstration (SSBD). This was not one of its original components. Resurrecting an idea from the HSR program, Domenic Maglieri and colleagues at Eagle Aeronautics recommended that DARPA include a flight-test program using the BQM-34E Firebee II as a proof-of-concept for the QSP's sonic boom objectives. Liking this idea, Northrop Grumman Corporation (NGC) wasted no time in acquiring the last remaining Firebee IIs from the Naval Air Weapons Station at Point Mugu, CA, but later determined that they were now too old for test purposes. As an alternative, NGC aerodynamicist David Graham recommended using different versions of the Northrop F-5 (which had been modified into larger training and reconnaissance models) for sonic boom comparisons. Maglieri then suggested modifications to an F-5E that could flatten its sonic boom signature. Based largely on NGC's proposal for an F-5E Shaped Sonic Boom Demonstration, DARPA in July 2001 selected it over QSP proposals from the other two system integrators, Boeing Phantom Works and Lockheed Martin's Skunk Works.\n[[183]](#footnote-7898-183)"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false,
+          "context_mapping_normalization": "Remove only leading <N-hop> followed by blank line; stored original contexts unchanged."
+        }
+      }
+    },
+    {
+      "id": "d23e0afb-df39-5e36-afe3-beeafa416235",
+      "input": "What installation and rework difficulties affected Columbia’s thermal-protection tiles at the Kennedy Space Center during 1979?",
+      "expected_output": "During 1979, workers installing new tiles on Columbia discovered increasing numbers that needed removal and replacement, disrupting orderly installation procedures. Rockwell had originally received tiles from Lockheed in arrays and attached them in defined sequences, with 550 tiles installed in a week considered good progress. Columbia subsequently had a patchwork of satisfactory tiles, defective tiles, and empty areas. This irregular layout made precut tiles likely to fit poorly in their assigned cavities, leaving excessively wide gaps between adjacent tiles.\n\nMany tiles therefore required individual fitting. Workers placed two tiles, carefully measured the space for a third, and sent those measurements to Lockheed in Sunnyvale, California. Lockheed then machined a tile to the unique specifications and shipped it to the Kennedy Space Center. This process meant that each person could take as long as three weeks to install just four tiles. Densification added further delays: a tile removed for rework required two weeks before it was ready for reinstallation. For a time, more tiles were removed than installed in a given week.",
+      "metadata": {
+        "case_id": "ragas-row-39",
+        "origin": "ragas_import",
+        "dataset_role": "ragas_import",
+        "question_type": "ragas_single_hop_specific",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "unknown_from_export",
+        "provenance": {
+          "source_file": "nasa-rag-testset-200-chunks-400.json",
+          "source_sha256": "31c176152807905aa7351227a6d8ba2023080da8809ab8b780a2db68052bc33e",
+          "row_index_zero_based": 39,
+          "synthesizer_name": "single_hop_specific_query_synthesizer",
+          "original_row": {
+            "user_input": "What installation and rework difficulties affected Columbia’s thermal-protection tiles at the Kennedy Space Center during 1979?",
+            "reference": "During 1979, workers installing new tiles on Columbia discovered increasing numbers that needed removal and replacement, disrupting orderly installation procedures. Rockwell had originally received tiles from Lockheed in arrays and attached them in defined sequences, with 550 tiles installed in a week considered good progress. Columbia subsequently had a patchwork of satisfactory tiles, defective tiles, and empty areas. This irregular layout made precut tiles likely to fit poorly in their assigned cavities, leaving excessively wide gaps between adjacent tiles.\n\nMany tiles therefore required individual fitting. Workers placed two tiles, carefully measured the space for a third, and sent those measurements to Lockheed in Sunnyvale, California. Lockheed then machined a tile to the unique specifications and shipped it to the Kennedy Space Center. This process meant that each person could take as long as three weeks to install just four tiles. Densification added further delays: a tile removed for rework required two weeks before it was ready for reinstallation. For a time, more tiles were removed than installed in a given week.",
+            "persona_name": "Dr. Elena Mercer",
+            "query_style": "PERFECT_GRAMMAR",
+            "query_length": "MEDIUM",
+            "synthesizer_name": "single_hop_specific_query_synthesizer"
+          },
+          "edits": []
+        },
+        "reference_context_ids": [
+          "c85ee99c-4f21-460e-a9ab-b7bda588e1fa"
+        ],
+        "source_documents": [
+          {
+            "node_id": "c85ee99c-4f21-460e-a9ab-b7bda588e1fa",
+            "document_id": "nasa:049c6dc4b5c43fc9d0906aff0801b90f0878d292deacd1ee07d2cf835ee7b7b0",
+            "title": "NASA’s Contributions To Aeronautics - Volume 1",
+            "chunk_index": 203,
+            "sha256": "7a68aa96a05ca820491451cd8e36d5ae9acd800c3d774ce10cead31a326a3339"
+          }
+        ],
+        "evidence": [
+          {
+            "node_id": "c85ee99c-4f21-460e-a9ab-b7bda588e1fa",
+            "quote": "By then, Columbia had been moved to the Kennedy Space Center. The work nevertheless went badly during 1979, for as people continued to install new tiles, they found more and more that needed to be removed and replaced. Orderly installation procedures broke down. Rockwell had received the tiles from Lockheed in arrays and had attached them in well-defined sequences. Even so, that work had gone slowly, with 550 tiles in a week being a good job. But now Columbia showed a patchwork of good ones, bad ones, and open areas with no tiles. Each individual tile had been shaped to a predetermined pattern at Lockheed using that firm's numerically controlled milling machines. But the haphazardness of the layout made it likely that any precut tile would fail to fit into its assigned cavity, leaving too wide a gap with the adjacent ones.\nMany tiles therefore were installed one by one, in a time-consuming process that fitted two into place and then carefully measured space for a third, designing it to fill the space between them. The measurements went to Sunnyvale, CA, where Lockheed carved that tile to its unique specification and shipped it to the Kennedy Space Center (KSC). Hence, each person took as long as 3 weeks to install just 4 tiles. Densification also took time; a tile removed from Columbia for rework needed 2 weeks until it was ready for reinstallation.\n[[82]](#footnote-754-82)\nHow could these problems have been avoided? They all stemmed from the fact that the tile work was well advanced before NASA learned that the tile-SIP-adhesive bonds had less strength than the Agency needed. The analysis that disclosed the strength requirements was neither costly nor demanding; it might readily have been in hand during 1976 or 1977. Had this happened, Lockheed could have begun shipping densified tiles at an early date. Their development and installation would have occurred within the normal flow of the Shuttle program, with the change amounting perhaps to little more than an engineering detail.\nNEW 20 STS-1 Columbia landing 4-81 NASA Photo.tif\nThe Space Shuttle Columbia descends to land at Edwards following its hypersonic reentry from orbit in April 1981. NASA.\nThe reason this did not happen was far-reaching, for it stemmed from the basic nature of the program. The Shuttle effort followed \"concurrent development,\" with design, manufacture, and testing proceeding in parallel rather than in sequence. This approach carried risk, but the Air Force had used it with success during the 1960s. It allowed new technologies to enter service at the earliest possible date. But within the Shuttle program, funds were tight. Managers had to allocate their budgets adroitly, setting priorities and deferring what they could put off. To do this properly was a high art, calling for much experience and judgment, for program executives had to be able to conclude that the low-priority action items would contain no unpleasant surprises. The calculation of tile strength requirements was low on the action list because it appeared unnecessary; there was good reason to believe that the tiles would face nothing worse than 2 psi. Had this been true, and had the main engines been ready, Columbia might have flown by mid-1980. It did not fly until April 1981, and, in this sense, tile problems brought a delay of close to 1 year.\nThe delay in carrying through the tile-strength computation was not mandatory. Had there been good reason to upgrade its priority, it could readily have been done earlier. The budget stringency that brought this deferral (along with many others) thus was false economy par excellence, for the program did not halt during that year of launch delay. It kept writing checks for its contractors and employees. The missing tile-strength analysis thus ramified in its consequences, contributing substantially to a cost overrun in the Shuttle program.\n[[83]](#footnote-754-83)\nDuring 1979, NASA gave the same intense level of attention to the tiles' mechanical problems that it had previously reserved for their thermal development. The effort nevertheless continued to follow the pattern of three steps forward and two steps back, and, for a while, more tiles were removed than were put on in a given week. Even so, by the fall of 1980, the end was in sight.\n[[84]](#footnote-754-84)"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false,
+          "context_mapping_normalization": "Remove only leading <N-hop> followed by blank line; stored original contexts unchanged."
+        }
+      }
+    },
+    {
+      "id": "7b653195-137b-5f44-84c6-80d479f4cfa9",
+      "input": "What role did NASA Ames wind tunnel testing play in studying Enterprise’s separation from its 747 carrier aircraft and supporting low-speed flight tests?",
+      "expected_output": "NASA’s wind tunnel program gave close attention to low-speed flight, including approach, landing, and Enterprise’s separation from the 747 during the 1977 flight tests. At NASA Ames, a 14-foot transonic tunnel investigated problems involving Enterprise and its 747 carrier aircraft. Broader low-speed testing included a 0.36-scale orbiter model built by Rockwell in 1975 and tested in Ames’s 40- by 80-foot test section. This model supplied parameters for astronaut flight simulators, which previously relied on data from 3-percent-scale models. It also calibrated and tested systems for aerodynamic measurements during flight tests and verified the design of the elevons, other flight control surfaces, and their actuators.",
+      "metadata": {
+        "case_id": "ragas-row-41",
+        "origin": "ragas_import",
+        "dataset_role": "ragas_import",
+        "question_type": "ragas_single_hop_specific",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "unknown_from_export",
+        "provenance": {
+          "source_file": "nasa-rag-testset-200-chunks-400.json",
+          "source_sha256": "31c176152807905aa7351227a6d8ba2023080da8809ab8b780a2db68052bc33e",
+          "row_index_zero_based": 41,
+          "synthesizer_name": "single_hop_specific_query_synthesizer",
+          "original_row": {
+            "user_input": "What role did NASA Ames wind tunnel testing play in studying Enterprise’s separation from its 747 carrier aircraft and supporting low-speed flight tests?",
+            "reference": "NASA’s wind tunnel program gave close attention to low-speed flight, including approach, landing, and Enterprise’s separation from the 747 during the 1977 flight tests. At NASA Ames, a 14-foot transonic tunnel investigated problems involving Enterprise and its 747 carrier aircraft. Broader low-speed testing included a 0.36-scale orbiter model built by Rockwell in 1975 and tested in Ames’s 40- by 80-foot test section. This model supplied parameters for astronaut flight simulators, which previously relied on data from 3-percent-scale models. It also calibrated and tested systems for aerodynamic measurements during flight tests and verified the design of the elevons, other flight control surfaces, and their actuators.",
+            "persona_name": "Dr. Elena Marlow",
+            "query_style": "PERFECT_GRAMMAR",
+            "query_length": "MEDIUM",
+            "synthesizer_name": "single_hop_specific_query_synthesizer"
+          },
+          "edits": []
+        },
+        "reference_context_ids": [
+          "4d99aa38-7392-4cbb-b2ff-e0f7becdc829"
+        ],
+        "source_documents": [
+          {
+            "node_id": "4d99aa38-7392-4cbb-b2ff-e0f7becdc829",
+            "document_id": "nasa:049c6dc4b5c43fc9d0906aff0801b90f0878d292deacd1ee07d2cf835ee7b7b0",
+            "title": "NASA’s Contributions To Aeronautics - Volume 1",
+            "chunk_index": 205,
+            "sha256": "78f9cf07fecaed4bc14c553b44e74e3d6358d3c9308fb5d87391459dada947ae"
+          }
+        ],
+        "evidence": [
+          {
+            "node_id": "4d99aa38-7392-4cbb-b2ff-e0f7becdc829",
+            "quote": "The Illiac IV was a research tool, not an instrument of mainstream Shuttle development. It extended the reach of flow codes, treating three-dimensional inviscid problems while supporting simulations of viscous flows that used approximate equations to model the turbulence.\n[[91]](#footnote-754-91)\nIn the realm of Space Shuttle studies, Ames's Walter Reinhardt used it to run a three-dimensional inviscid code that included equations of atmospheric chemistry. Near-peak-entry heating of the Shuttle would be surrounded by dissociated air that was chemically reacting and not in chemical equilibrium. Reinhardt's code treated the full-scale orbiter during entry and gave a fine example of the computational simulation of flows that were impossible to reproduce in ground facilities.\n[[92]](#footnote-754-92)\nSuch exercises gave tantalizing hints of what would be done with computers of the next generation. Still, the Shuttle program was at least a decade too early to use computational simulations both routinely and effectively. NASA therefore used its wind tunnels. The wind tunnel program gave close attention to low-speed flight, which included approach and landing as well as separation from the 747 during the 1977 flight tests of Enterprise.\nIn 1975, Rockwell built a $1 million model of the orbiter at 0.36 scale, lemon yellow in color and marked with the blue NASA logo. It went into the 40- by 80-foot test section of Ames's largest tunnel, which was easily visible from the adjacent freeway. It gave parameters for the astronauts' flight simulators, which previously had used data from models at 3-percent scale. The big one had grooves in its surface that simulated the gaps between thermal protection tiles, permitting assessment of the consequences of the resulting roughness of the skin. It calibrated and tested systems for making aero-dynamic measurements during flight test and verified the design of the elevons and other flight control surfaces as well as of their actuators.\n[[93]](#footnote-754-93)\nOther wind tunnel work strongly influenced design changes that occurred early in development. The most important was the introduction of the lightweight delta wing late in 1972, which reduced the size of the solid boosters and chopped 1 million pounds from the overall weight. Additional results changed the front of the external tank from a cone to an ogive and moved the solid boosters rearward, placing their nozzles farther from the orbiter. The modifications reduced drag, minimized aerodynamic interference on the orbiter, and increased stability by moving the aerodynamic center aft.\nThe activity disclosed and addressed problems that initially had not been known to exist. Because both the liquid main engines and the solids had nozzles that gimbaled, it was clear that they had enough power to provide control during ascent. Aerodynamic control would not be necessary, and managers believed that the orbiter could set its elevons in a single position through the entire flight to orbit. But work in wind tunnels subsequently showed that aerodynamic forces during ascent would impose excessive loads on the wings. This required elevons to move while in powered flight to relieve these loads. Uncertainties in the wind tunnel data then broadened this requirement to incorporate an active system that prevented overloading the elevon actuators. This system also helped the Shuttle to fly a variety of ascent trajectories, which imposed different elevon loads from one flight to the next.\n[[94]](#footnote-754-94)\nMuch wind tunnel work involved issues of separation: Enterprise from its carrier aircraft, solid boosters from the external tank after burnout. At NASA Ames, a 14-foot transonic tunnel investigated problems of Enterprise and its 747. Using the same equipment, engineers addressed the separation of an orbiter from its external tank. This was supposed to occur in near-vacuum, but it posed aerodynamic problems during an abort.\nThe solid boosters brought their own special issues and nuances. They had to separate cleanly; under no circumstances could a heavy steel casing strike a wing. Small solid rocket motors, mounted fore and aft on each booster, were to push them away safely. It then was necessary to understand the behavior of their exhaust plumes, for these small motors were to blast into onrushing airflow that could blow their plumes against the orbiter's sensitive tiles or the delicate aluminum skin of the external tank. Wind tunnel tests helped to define appropriate angles of fire while also showing that a short, sharp burst from the motors was best.\n[[95]](#footnote-754-95)"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false,
+          "context_mapping_normalization": "Remove only leading <N-hop> followed by blank line; stored original contexts unchanged."
+        }
+      }
+    },
+    {
+      "id": "feaba22f-5de6-5be3-8454-eff551696fa3",
+      "input": "As an aerospace flight-dynamics researcher seeking to understand numerical flow-field predictions around aircraft models, how does computational fluid dynamics convert the Navier-Stokes equations into numerical solutions for pressure, density, and velocity at selected points in time or space?",
+      "expected_output": "Computational fluid dynamics replaces the partial derivatives, or integrals when the integral form is used, in the Navier-Stokes equations with discrete algebraic forms. These governing equations express three fundamental principles: conservation of mass through the continuity equation, Newton’s second law through the momentum equation, and the first law of thermodynamics through the energy equation.\n\nAt selected locations in the flow, called grid points, the derivatives in each equation are replaced with numbers that are advanced in time or space. This transforms the partial differential equations into a large system of algebraic equations, which is solved simultaneously to obtain flow variables such as pressure, density, and velocity at the grid points.\n\nThe result is a collection of numerical values at discrete points, rather than a closed-form analytical solution that permits calculation at any chosen point throughout the flow field. Grid points may be distributed initially throughout the flow or generated during the solution using an adaptive grid.\n\nGrid generation is essential to this process. The spacing and geometric arrangement of grid points are critical to numerical accuracy. Poor grids almost always produce poor CFD solutions; good grids do not guarantee good solutions, but they are essential for useful ones. For some flows over complex three-dimensional configurations, generating a proper grid can take months.",
+      "metadata": {
+        "case_id": "ragas-row-54",
+        "origin": "ragas_import",
+        "dataset_role": "ragas_import",
+        "question_type": "ragas_single_hop_specific",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "unknown_from_export",
+        "provenance": {
+          "source_file": "nasa-rag-testset-200-chunks-400.json",
+          "source_sha256": "31c176152807905aa7351227a6d8ba2023080da8809ab8b780a2db68052bc33e",
+          "row_index_zero_based": 54,
+          "synthesizer_name": "single_hop_specific_query_synthesizer",
+          "original_row": {
+            "user_input": "As an aerospace flight-dynamics researcher seeking to understand numerical flow-field predictions around aircraft models, how does computational fluid dynamics convert the Navier-Stokes equations into numerical solutions for pressure, density, and velocity at selected points in time or space?",
+            "reference": "Computational fluid dynamics replaces the partial derivatives, or integrals when the integral form is used, in the Navier-Stokes equations with discrete algebraic forms. These governing equations express three fundamental principles: conservation of mass through the continuity equation, Newton’s second law through the momentum equation, and the first law of thermodynamics through the energy equation.\n\nAt selected locations in the flow, called grid points, the derivatives in each equation are replaced with numbers that are advanced in time or space. This transforms the partial differential equations into a large system of algebraic equations, which is solved simultaneously to obtain flow variables such as pressure, density, and velocity at the grid points.\n\nThe result is a collection of numerical values at discrete points, rather than a closed-form analytical solution that permits calculation at any chosen point throughout the flow field. Grid points may be distributed initially throughout the flow or generated during the solution using an adaptive grid.\n\nGrid generation is essential to this process. The spacing and geometric arrangement of grid points are critical to numerical accuracy. Poor grids almost always produce poor CFD solutions; good grids do not guarantee good solutions, but they are essential for useful ones. For some flows over complex three-dimensional configurations, generating a proper grid can take months.",
+            "persona_name": "Dr. Elena Marlow",
+            "query_style": "PERFECT_GRAMMAR",
+            "query_length": "LONG",
+            "synthesizer_name": "single_hop_specific_query_synthesizer"
+          },
+          "edits": []
+        },
+        "reference_context_ids": [
+          "341195de-b312-427d-9896-3567e44ccb48"
+        ],
+        "source_documents": [
+          {
+            "node_id": "341195de-b312-427d-9896-3567e44ccb48",
+            "document_id": "nasa:049c6dc4b5c43fc9d0906aff0801b90f0878d292deacd1ee07d2cf835ee7b7b0",
+            "title": "NASA’s Contributions To Aeronautics - Volume 1",
+            "chunk_index": 277,
+            "sha256": "f1140ed199140b7baca2d3dba5ba7adfea22f85d6d3fa2f1dfe21512ee8ee944"
+          }
+        ],
+        "evidence": [
+          {
+            "node_id": "341195de-b312-427d-9896-3567e44ccb48",
+            "quote": "What constitutes computational fluid dynamics? The basic equations of fluid dynamics, the Navier-Stokes equations, are expressions of three fundamental principles: (1) mass is conserved (the continuity equation), (2) Newton's second law (the momentum equation), and (3) the energy equation (the first law of thermodynamics). Moreover, these equations in their most general form are either partial differential equations (as we have discussed) or integral equations (an alternate form we have not discussed involving integrals from calculus).\nThe partial differential equations are those exhibited at the NASM. Computational fluid dynamics is the art and science of replacing the partial derivatives (or integrals, as the case may be) in these equations with discrete algebraic forms, which in turn are solved to obtain numbers for the flow-field values (pressure, density, velocity, etc.) at discrete points in time and or space.\n[[8]](#footnote-7766-8)\nAt these selected points in the flow, called grid points, each of the derivatives in each of the equations are simply replaced with numbers that are advanced in time or space to obtain a solution for the flow. In this fashion, the partial differential equations are replaced by a large number of algebraic equations, which can then be solved simultaneously for the flow variables at all the grid points.\nThe end product of the CFD process is thus a collection of numbers, in contrast to a closed-form analytical solution (equations). However, in the long run, the objective of most engineering analyses, closed-form or otherwise, is a quantitative description of the problem: that is, numbers. Along these lines, in 1856, the famous British scientist James Clerk Maxwell wrote: \"All the mathematical sciences are founded on relations between physical laws and laws of numbers, so that the aim of exact science is to reduce the problems of nature to the determination of quantities by operations with numbers.\"\n[[9]](#footnote-7766-9)\nWell over a century later, it is worth noting how well Maxwell captured the essence of CFD: operations with numbers.\nNote that computational fluid dynamics results in solutions for the flow only at the distinct points in the flow called grid points, which were identified earlier. In a CFD solution, grid points are either initially distributed throughout the flow and/or generated during the course of the solution (called an \"adaptive grid\"). This is in theoretical contrast with a closed-form analytical solution for the flow, where the solution is in the form of equations that allow the calculation of the flow variables at any point of one's choosing, that is, an analytical solution is like a continuous answer spread over the whole flow field. Closed-form analytical solutions may be likened to a traditionalist Dutch master's painting consisting of continuous brush strokes, while a CFD solution is akin to a French pointillist consisting of multicolored dots made with a brush tip.\nGenerating a grid is an essential part of the art of CFD. The spacing between grid points and the geometric ways in which they are arrayed is critical to obtaining an accurate numerical CFD solution. Poor grids almost always ensure poor CFD solutions. Though good grids do not guarantee good CFD solutions, they are essential for useful solutions. Grid generation is a discipline all by itself, a subspecialty of CFD. And grid generation can become very labor-intensive-for some flows over complex three-dimensional configurations, it may take months to generate a proper grid.\nTo summarize, the Navier-Stokes equations, the governing equations of fluid dynamics, have been in existence for more than 160 years, their creation a triumph of derivative insight. But few knew how to analytically solve them except for a few simple cases. Because of their complexity, they thus could not serve as a practical widely employed tool in the engineer's arsenal. It took the invention of the computer to make that possible. And because it did so, it likewise permitted the advent of computational fluid dynamics. So how did the idea of numerical solutions to the Navier-Stokes equations evolve?\nThe Concept of Finite Differences Enters the Mathematical Scene"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false,
+          "context_mapping_normalization": "Remove only leading <N-hop> followed by blank line; stored original contexts unchanged."
+        }
+      }
+    },
+    {
+      "id": "2bf40b58-99a0-56c4-b542-10159e81da6f",
+      "input": "What changes in rolling moment and flow behavior did the AD-1 exhibit as angle of attack increased beyond the linear range?",
+      "expected_output": "The AD-1 experienced fairly large changes in rolling moment with angle of attack beyond the linear range. As angle of attack increased from 8 to approximately 12 degrees, vortex lift, other local flow separations, and ultimately full stall of the aft-swept wing occurred in rapid succession. The context therefore cautions that describing the AD-1 as having normal handling qualities would be a severe oversimplification.",
+      "metadata": {
+        "case_id": "ragas-row-55",
+        "origin": "ragas_import",
+        "dataset_role": "ragas_import",
+        "question_type": "ragas_single_hop_specific",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "unknown_from_export",
+        "provenance": {
+          "source_file": "nasa-rag-testset-200-chunks-400.json",
+          "source_sha256": "31c176152807905aa7351227a6d8ba2023080da8809ab8b780a2db68052bc33e",
+          "row_index_zero_based": 55,
+          "synthesizer_name": "single_hop_specific_query_synthesizer",
+          "original_row": {
+            "user_input": "What changes in rolling moment and flow behavior did the AD-1 exhibit as angle of attack increased beyond the linear range?",
+            "reference": "The AD-1 experienced fairly large changes in rolling moment with angle of attack beyond the linear range. As angle of attack increased from 8 to approximately 12 degrees, vortex lift, other local flow separations, and ultimately full stall of the aft-swept wing occurred in rapid succession. The context therefore cautions that describing the AD-1 as having normal handling qualities would be a severe oversimplification.",
+            "persona_name": "Dr. Elena Marlow",
+            "query_style": "PERFECT_GRAMMAR",
+            "query_length": "MEDIUM",
+            "synthesizer_name": "single_hop_specific_query_synthesizer"
+          },
+          "edits": []
+        },
+        "reference_context_ids": [
+          "84bd46ea-c464-4f5f-bf11-d668db2bd2a5"
+        ],
+        "source_documents": [
+          {
+            "node_id": "84bd46ea-c464-4f5f-bf11-d668db2bd2a5",
+            "document_id": "nasa:049c6dc4b5c43fc9d0906aff0801b90f0878d292deacd1ee07d2cf835ee7b7b0",
+            "title": "NASA’s Contributions To Aeronautics - Volume 1",
+            "chunk_index": 320,
+            "sha256": "e5080b187af625f5e511a7a7277171e2f6dc3af4296d0d25d3dde5265371e1b8"
+          }
+        ],
+        "evidence": [
+          {
+            "node_id": "84bd46ea-c464-4f5f-bf11-d668db2bd2a5",
+            "quote": "However, the project did make a significant accomplishment in the use of static aeroelastic tailoring. The fiberglass wing design by Ron Smith was tailored to bend just enough, with increasing g, to cancel out an aerodynamically induced rolling moment. Pure bending of the oblique wing increases the incidence (and therefore the lift) of the forward-swept tip and decreases the incidence (and lift) of the aft-swept tip. In a pullup maneuver, increasing lift coefficient (CL), and load factor at a given flight condition, this would cause a rollaway from the forward-swept tip. At the same time, induced aerodynamic effects (the downwash/upwash distribution) increase the lift at the tip of an aft-swept wing. On an aircraft with only one aft-swept tip, this would cause a roll toward the forward-swept side. The design intent for the AD-1 was to have these two effects cancel each other as nearly as possible, so that the net change in rolling moment because of increasing g at a given flight condition would be zero. The design condition was CL = 0.3 for 1-g flight at 170 knots, 12,500-foot altitude, and a weight of 1,850 pounds, with the wing at 60-degree sweep.\n[[171]](#footnote-7771-171)\nAn aeroelastically scaled one-sixth model was tested at full-scale Reynolds number in the Ames 12-Foot Pressure Wind Tunnel. A stiff aluminum wing was used for preliminary tests, then two fiberglass wings. The two fiberglass wings had zero sweep at the 25- and 30-percent chord lines, respectively, bracketing the full-scale AD-1 wing, which had zero sweep at 27-percent chord. The wings were tested at the design scaled dynamic pressure and at two lower values to obtain independent variation of wing load because of angle of attack and dynamic pressure at a constant angle of attack. Forces and moments were measured, and deflection was determined from photographs of the wing at test conditions.\n[[172]](#footnote-7771-172)\nSubsequently, \". . . the actual wing deflection in bending and twist was verified before flight through static ground loading tests.\" Finally, in-flight measurements were made of total force and moment coefficients and of aeroelastic effects. Level-flight decelerations provided angle-of-attack sweeps at constant load, and windup turns provided angle-of-attack sweeps at constant \"q\" (dynamic pressure). Results were interpreted and compared with predictions. The simulator model, with aeroelastic effects included, realistically represented the dynamic responses of the flight vehicle.\n[[173]](#footnote-7771-173)\nProvision had been made for mechanical linkage between the pitch and roll controls, to compensate for any pitch-roll coupling observed in flight. However, the intent of the aeroelastic wing was achieved closely enough that the mechanical interconnect was never used.\n[[174]](#footnote-7771-174)\nRoll trim was not needed at the design condition (60-degrees sweep) nor at zero sweep, where the aircraft was symmetric. At intermediate sweep angles, roll trim was required. The correction of this characteristic was not pursued because it was not a central objective of the project. Also, the airplane experienced fairly large changes in rolling moment with angle of attack beyond the linear range. Vortex lift, other local flow separations, and ultimately full stall of the aft-swept wing, occurred in rapid succession as angle of attack was increased from 8 to approximately 12 degrees. Therefore, it would be a severe oversimplification to say that the AD-1 had normal handling qualities.\n[[175]](#footnote-7771-175)"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false,
+          "context_mapping_normalization": "Remove only leading <N-hop> followed by blank line; stored original contexts unchanged."
+        }
+      }
+    },
+    {
+      "id": "c315fd6d-f313-5c0a-9f94-acfa4d020725",
+      "input": "As an aerospace flight-dynamics researcher concerned with aerodynamic instability and test safety, I would like to understand the panel-flutter test program that used the NASA wind tunnel at Ames: what operating conditions and test specimens were used, why was testing to the actual flutter point considered dangerous, and how did investigators progressively approach the required dynamic pressure?",
+      "expected_output": "The panel-flutter test program used the 11-foot by 11-foot Unitary installation at Ames for Mach numbers from 1.2 to 1.4. It also used the 4-foot by 4-foot Unitary facility at Langley, which covered Mach numbers from 1.6 to 2.8. Heaters warmed the test samples to 840 °F, and investigators began with steel panels before progressing to panels fabricated from René nickel alloy. Panels under test were as large as 24 by 45 inches.\n\nThe purpose was to demonstrate that complete panels could withstand aerodynamic flutter. An April 1962 report from the Aerospace Vehicles Panel of the Air Force Scientific Advisory Board identified flutter as a problem requiring critical attention. A Boeing review explained that taking a test to the actual flutter point risked destroying the specimen and jeopardizing the wind tunnel itself. Flutter could cause fatigue failure, allowing parts of a specimen to be blown through the tunnel at supersonic speed.\n\nTo address this danger, testing began at dynamic pressures of 400 and 500 pounds per square foot. Over a year and a half, the program advanced to pressures exceeding the design requirement of close to 1,400 pounds per square foot. The tests concluded in 1962.",
+      "metadata": {
+        "case_id": "ragas-row-66",
+        "origin": "ragas_import",
+        "dataset_role": "ragas_import",
+        "question_type": "ragas_single_hop_specific",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "unknown_from_export",
+        "provenance": {
+          "source_file": "nasa-rag-testset-200-chunks-400.json",
+          "source_sha256": "31c176152807905aa7351227a6d8ba2023080da8809ab8b780a2db68052bc33e",
+          "row_index_zero_based": 66,
+          "synthesizer_name": "single_hop_specific_query_synthesizer",
+          "original_row": {
+            "user_input": "As an aerospace flight-dynamics researcher concerned with aerodynamic instability and test safety, I would like to understand the panel-flutter test program that used the NASA wind tunnel at Ames: what operating conditions and test specimens were used, why was testing to the actual flutter point considered dangerous, and how did investigators progressively approach the required dynamic pressure?",
+            "reference": "The panel-flutter test program used the 11-foot by 11-foot Unitary installation at Ames for Mach numbers from 1.2 to 1.4. It also used the 4-foot by 4-foot Unitary facility at Langley, which covered Mach numbers from 1.6 to 2.8. Heaters warmed the test samples to 840 °F, and investigators began with steel panels before progressing to panels fabricated from René nickel alloy. Panels under test were as large as 24 by 45 inches.\n\nThe purpose was to demonstrate that complete panels could withstand aerodynamic flutter. An April 1962 report from the Aerospace Vehicles Panel of the Air Force Scientific Advisory Board identified flutter as a problem requiring critical attention. A Boeing review explained that taking a test to the actual flutter point risked destroying the specimen and jeopardizing the wind tunnel itself. Flutter could cause fatigue failure, allowing parts of a specimen to be blown through the tunnel at supersonic speed.\n\nTo address this danger, testing began at dynamic pressures of 400 and 500 pounds per square foot. Over a year and a half, the program advanced to pressures exceeding the design requirement of close to 1,400 pounds per square foot. The tests concluded in 1962.",
+            "persona_name": "Dr. Elena Marlow",
+            "query_style": "PERFECT_GRAMMAR",
+            "query_length": "LONG",
+            "synthesizer_name": "single_hop_specific_query_synthesizer"
+          },
+          "edits": []
+        },
+        "reference_context_ids": [
+          "b991f6be-788e-477f-a0c3-996df311161a"
+        ],
+        "source_documents": [
+          {
+            "node_id": "b991f6be-788e-477f-a0c3-996df311161a",
+            "document_id": "nasa:049c6dc4b5c43fc9d0906aff0801b90f0878d292deacd1ee07d2cf835ee7b7b0",
+            "title": "NASA’s Contributions To Aeronautics - Volume 1",
+            "chunk_index": 366,
+            "sha256": "2dfc449c90490e45e216bdc5109da7f60a977a047badb70fd79de246db81110a"
+          }
+        ],
+        "evidence": [
+          {
+            "node_id": "b991f6be-788e-477f-a0c3-996df311161a",
+            "quote": "The vehicle had some 140 running feet of leading edges and 140 square feet of associated area. This included leading edges of the vertical fins and elevons as well as of the wings. In general, D-36 served when temperatures during reentry did not exceed 2,700 °F, while TZM was used for temperatures between 2,700 and 3,000 °F. In accordance with the Stefan-Boltzmann law, all surfaces radiated heat at a rate proportional to the fourth power of the temperature. Hence for equal emissivities, a surface at 3,000 °F radiated 44 percent more heat than one at 2,700 °F.\n[[29]](#footnote-8873-29)\nPanels of both TZM and D-36 demanded antioxidation coatings. These coatings were formed directly on the surfaces as metallic silicides (silicon compounds), using a two-step process that employed iodine as a chemical intermediary. Boeing introduced a fluidized-bed method for application of the coatings that cut the time for preparation while enhancing uniformity and reliability. In addition, a thin layer of silicon carbide, applied to the surface, gave the vehicle its distinctive black color. It enhanced the emissivity, lowering temperatures by as much as 200 °F.\nIt was necessary to show that complete panels could withstand aerodynamic flutter. A report of the Aerospace Vehicles Panel of the Air Force Scientific Advisory Board came out in April 1962 and singled out the problem of flutter, citing it as one that called for critical attention. The test program used two NASA wind tunnels: the 4-foot by 4-foot Unitary facility at Langley that covered a range of Mach 1.6 to 2.8 and the 11-foot by 11-foot Unitary installation at Ames for Mach 1.2 to 1.4. Heaters warmed test samples to 840 °F as investigators started with steel panels and progressed to versions fabricated from René nickel alloy.\n\"Flutter testing in wind tunnels is inherently dangerous,\" a Boeing review declared. \"To carry the test to the actual flutter point is to risk destruction of the test specimen. Under such circumstances, the safety of the wind tunnel itself is jeopardized.\" Panels under test were as large as 24 by 45 inches; flutter could have brought failure through fatigue, with parts of a specimen being blown through the tunnel at supersonic speed. Thus, the work started at dynamic pressures of 400 and 500 pounds per square foot (psf) and advanced over a year and a half to exceed the design requirement of close to 1,400 psf. Tests were concluded in 1962.\n[[30]](#footnote-8873-30)\nBetween the outer panels and the inner primary structure, a corrugated skin of René 41 served as the substructure. On the upper wing surface and upper fuselage, where the temperatures were no higher than 2,000 °F, the thermal-protection panels were also of René 41 rather than of a refractory. Measuring 12 by 45 inches, these panels were spot-welded directly to the corrugations of the substructure. For the wing undersurface and for other areas that were hotter than 2,000 °F, designers specified an insulated structure. Standoff clips, each with four legs, were riveted to the underlying corrugations and supported the refractory panels, which also were 12 by 45 inches in size.\nThe space between the panels and the substructure was to be filled with insulation. A survey of candidate materials showed that most of them exhibited a strong tendency to shrink at high temperatures. This was undesirable; it increased the rate of heat transfer and could create uninsulated gaps at seams and corners. Q-felt, a silica fiber from Johns Manville, also showed shrinkage. However, nearly all of it occurred at 2,000 °F and below; above 2,000 °F, further shrinkage was negligible. This meant that Q-felt could be \"pre-shrunk\" through exposure to temperatures above 2,000 °F for several hours. The insulation that resulted had density no greater than 6.2 pounds per cubic foot, one-tenth that of water. In addition, it withstood temperatures as high as 3,000 °F.\n[[31]](#footnote-8873-31)"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false,
+          "context_mapping_normalization": "Remove only leading <N-hop> followed by blank line; stored original contexts unchanged."
+        }
+      }
+    },
+    {
+      "id": "7e373a2c-c82d-5658-a167-12d6536e807b",
+      "input": "NASA DAST high-risk transonic flight experiments and aeroelastic structural design: why were remotely piloted Firebee drones selected, how did reduced flutter-suppression gain and misleading instrumentation lead to catastrophic wing failure on DAST-1, and how did investigators connect erroneous gain settings to closed-loop wing flutter and continue testing afterward?",
+      "expected_output": "The DAST program was conceived by researchers at Dryden and NASA Langley Research Center to conduct high-risk transonic flight experiments and compare theoretical and wind-tunnel findings with actual flight results. Modified Teledyne-Ryan BQM-34E/F Firebee II target drones were relatively inexpensive, easy to modify, and available from existing Navy stocks. Using remotely piloted vehicles allowed researchers to investigate aeroelastic effects, particularly wing flutter, that would be extremely hazardous in a piloted aircraft. The vehicles carried research instrumentation and remotely augmented digital flight-control systems, with a ground pilot operating from a remote cockpit and researchers monitoring telemetered data.\n\nDAST-1 received Boeing-designed ARW-1 swept supercritical wings optimized for a transport-type aircraft capable of Mach 0.98 at 45,000 feet. Its active flutter-suppression system, or FSS, used the ailerons, while the original Firebee stabilizer and rudder controls continued to control the vehicle. The research objectives included validating active flutter suppression, improving and verifying transonic flutter prediction techniques, and providing data for aerodynamic-loads prediction for elastic structures. Because the manufactured wings had greater torsional stiffness than predicted, researchers added 2-pound jettisonable ballast weights to each wingtip to keep the flutter boundary at an acceptable Mach number. They intended to fly beyond that boundary to demonstrate the FSS, with ballast jettison available to aid recovery from large-amplitude wing oscillations.\n\nDuring the third DAST-1 flight, the FSS unknowingly operated at one-half nominal gain. Misleading instrument indications concealed the developing trend toward violent flutter above Mach 0.8. At Mach 0.825, rapidly divergent oscillations saturated the FSS ailerons. The pilot jettisoned the wingtip masses, but the flutter continued. Less than 6 seconds after the oscillations began, the right wing broke apart, and the vehicle crashed near Cuddeback Dry Lake, California.\n\nInvestigators identified erroneous gain settings as the primary cause. Those settings produced a configuration in which the wing became unstable at lower Mach numbers than anticipated, resulting in closed-loop flutter. To continue the research, the ARW-1 wing was rebuilt as the ARW-1R and installed in a second DAST vehicle. DAST-2 subsequently underwent a captive systems-checkout flight on October 29, 1982, followed five days later by a subcritical-flutter envelope-expansion flight. That flight was aborted because of unexplained wing structural vibrations and control-system problems, and later attempts also encountered aborts. On June 1, 1983, DAST-2 was destroyed after a separate recovery-system malfunction immediately following launch. Investigators attributed that loss to a combination of a design flaw, a procedural error, and a hardware failure, rather than to the erroneous flutter-suppression gain settings responsible for the DAST-1 loss.",
+      "metadata": {
+        "case_id": "ragas-row-77",
+        "origin": "ragas_import",
+        "dataset_role": "ragas_import",
+        "question_type": "ragas_multi_hop_abstract",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "unknown_from_export",
+        "provenance": {
+          "source_file": "nasa-rag-testset-200-chunks-400.json",
+          "source_sha256": "31c176152807905aa7351227a6d8ba2023080da8809ab8b780a2db68052bc33e",
+          "row_index_zero_based": 77,
+          "synthesizer_name": "multi_hop_abstract_query_synthesizer",
+          "original_row": {
+            "user_input": "NASA DAST high-risk transonic flight experiments and aeroelastic structural design: why were remotely piloted Firebee drones selected, how did reduced flutter-suppression gain and misleading instrumentation lead to catastrophic wing failure on DAST-1, and how did investigators connect erroneous gain settings to closed-loop wing flutter and continue testing afterward?",
+            "reference": "The DAST program was conceived by researchers at Dryden and NASA Langley Research Center to conduct high-risk transonic flight experiments and compare theoretical and wind-tunnel findings with actual flight results. Modified Teledyne-Ryan BQM-34E/F Firebee II target drones were relatively inexpensive, easy to modify, and available from existing Navy stocks. Using remotely piloted vehicles allowed researchers to investigate aeroelastic effects, particularly wing flutter, that would be extremely hazardous in a piloted aircraft. The vehicles carried research instrumentation and remotely augmented digital flight-control systems, with a ground pilot operating from a remote cockpit and researchers monitoring telemetered data.\n\nDAST-1 received Boeing-designed ARW-1 swept supercritical wings optimized for a transport-type aircraft capable of Mach 0.98 at 45,000 feet. Its active flutter-suppression system, or FSS, used the ailerons, while the original Firebee stabilizer and rudder controls continued to control the vehicle. The research objectives included validating active flutter suppression, improving and verifying transonic flutter prediction techniques, and providing data for aerodynamic-loads prediction for elastic structures. Because the manufactured wings had greater torsional stiffness than predicted, researchers added 2-pound jettisonable ballast weights to each wingtip to keep the flutter boundary at an acceptable Mach number. They intended to fly beyond that boundary to demonstrate the FSS, with ballast jettison available to aid recovery from large-amplitude wing oscillations.\n\nDuring the third DAST-1 flight, the FSS unknowingly operated at one-half nominal gain. Misleading instrument indications concealed the developing trend toward violent flutter above Mach 0.8. At Mach 0.825, rapidly divergent oscillations saturated the FSS ailerons. The pilot jettisoned the wingtip masses, but the flutter continued. Less than 6 seconds after the oscillations began, the right wing broke apart, and the vehicle crashed near Cuddeback Dry Lake, California.\n\nInvestigators identified erroneous gain settings as the primary cause. Those settings produced a configuration in which the wing became unstable at lower Mach numbers than anticipated, resulting in closed-loop flutter. To continue the research, the ARW-1 wing was rebuilt as the ARW-1R and installed in a second DAST vehicle. DAST-2 subsequently underwent a captive systems-checkout flight on October 29, 1982, followed five days later by a subcritical-flutter envelope-expansion flight. That flight was aborted because of unexplained wing structural vibrations and control-system problems, and later attempts also encountered aborts. On June 1, 1983, DAST-2 was destroyed after a separate recovery-system malfunction immediately following launch. Investigators attributed that loss to a combination of a design flaw, a procedural error, and a hardware failure, rather than to the erroneous flutter-suppression gain settings responsible for the DAST-1 loss.",
+            "synthesizer_name": "multi_hop_abstract_query_synthesizer"
+          },
+          "edits": []
+        },
+        "reference_context_ids": [
+          "ea17ffda-a137-4121-86af-19360beeaca1",
+          "0192b309-30d0-4257-b1b0-6ed9f0198b05",
+          "79006c2d-0593-4cb6-ad24-bec5b6e53a37"
+        ],
+        "source_documents": [
+          {
+            "node_id": "ea17ffda-a137-4121-86af-19360beeaca1",
+            "document_id": "nasa:346ee0eb03ba002e82423a8215212612f9cd9c5da9780079c7111bb4a595bce3",
+            "title": "NASA’s Contributions To Aeronautics - Volume 2",
+            "chunk_index": 273,
+            "sha256": "e2b04309183cd0c69f3e34fa738a66da3d87b5664e0a731bb8d8341ecc402b18"
+          },
+          {
+            "node_id": "0192b309-30d0-4257-b1b0-6ed9f0198b05",
+            "document_id": "nasa:346ee0eb03ba002e82423a8215212612f9cd9c5da9780079c7111bb4a595bce3",
+            "title": "NASA’s Contributions To Aeronautics - Volume 2",
+            "chunk_index": 274,
+            "sha256": "b1e0da2b3e88ca9255479f2abcf32347c6e2e41609a52d7aea03f9613590dfc3"
+          },
+          {
+            "node_id": "79006c2d-0593-4cb6-ad24-bec5b6e53a37",
+            "document_id": "nasa:346ee0eb03ba002e82423a8215212612f9cd9c5da9780079c7111bb4a595bce3",
+            "title": "NASA’s Contributions To Aeronautics - Volume 2",
+            "chunk_index": 272,
+            "sha256": "cf549f2bdff803538d78a719a666a9ffdeba24479becd492d154a353cf1f6858"
+          }
+        ],
+        "evidence": [
+          {
+            "node_id": "ea17ffda-a137-4121-86af-19360beeaca1",
+            "quote": "Dana successfully transferred control of the drone to Vic Horton in the rear seat of an F-104B chase plane. Horton flew the Firebee through the autopilot to evaluate controllability before transferring control back to Dana just prior to recovery.\nTechnicians then installed instrumented standard wings, known as the Blue Streak configuration. Thomas C. McMurtry flew a mission March 9, 1979, to evaluate onboard systems such as the autopilot and RAV system. Results were generally good, with some minor issues to be addressed prior to flying the DAST-1 vehicle.\n[[54]](#footnote-7818-54)\nThe DAST researchers were most interested in correlating theoretical predictions and experimental flight results of aeroelastic effects in the transonic speed range. Such tests, particularly those involving wing flutter, would be extremely hazardous with a piloted aircraft.\nOne modified Firebee airframe, which came to be known as DAST-1, was fitted with a set of swept supercritical wings of a shape optimized for a transport-type aircraft capable of Mach 0.98 at 45,000 feet. The ARW-1 aeroelastic research wing, designed and built by Boeing in Wichita, KS, was equipped with an active flutter-suppression system (FSS). Research goals included validation of active controls technology for flutter suppression, enhancement, and verification of transonic flutter prediction techniques, and providing a database for aerodynamic-loads prediction techniques for elastic structures.\n[[55]](#footnote-7818-55)\nThe basic Firebee drone was controlled through collective and differential horizontal stabilizer and rudder deflections because it had no wing control surfaces. The DAST-1 retained this control system, leaving the ailerons free to perform the flutter suppression function. During fabrication of the wings, it became apparent that torsional stiffness was higher than predicted. To ensure that the flutter boundary remained at an acceptable Mach number, 2-pound ballast weights were added to each wingtip. These weights consisted of containers of lead shot that could be jettisoned to aid recovery from inadvertent large-amplitude wing oscillations. Researchers planned to intentionally fly the DAST-1 beyond its flutter boundary to demonstrate the effectiveness of the FSS.\n[[56]](#footnote-7818-56)\nAlong with the remote cockpit, there were two other ground-based facilities for monitoring and controlling the progress of DAST flight tests. Dryden's Control Room contained radar plot boards for monitoring the flight path, strip charts indicating vehicle rigid-body stability and control and operational functions, and communications equipment for coordinating test activities. A research pilot stationed in the Control Room served as flight director. Engineers monitoring the flutter tests were located in the Structural Analysis Facility (SAF). The SAF accommodated six people, one serving as test director to oversee monitoring of the experiments and communicate directly with the ground pilot.\n[[57]](#footnote-7818-57)\nThe DAST-1 was launched for the first time October 2, 1979. Following release from the NB-52B, Tom McMurtry guided the vehicle through FSS checkout maneuvers and a subcritical-flutter investigation. An uplink receiver failure resulted in an unplanned MARS recovery about 8 minutes after launch. The second flight was delayed until March 1980. Again only subcritical-flutter data were obtained, this time because of an unexplained oscillation in the left FSS aileron.\n[[58]](#footnote-7818-58)\nDuring the third flight, unknown to test engineers, the FSS was operating at one-half nominal gain. Misleading instrument indications concealed a trend toward violent flutter conditions at speeds beyond Mach 0.8. As the DAST-1 accelerated to Mach 0.825, rapidly divergent oscillations saturated the FSS ailerons. The pilot jettisoned the wingtip masses, but this failed to arrest the flutter. Less than 6 seconds after the oscillations began, the right wing broke apart, and the vehicle crashed near Cuddeback Dry Lake, CA."
+          },
+          {
+            "node_id": "0192b309-30d0-4257-b1b0-6ed9f0198b05",
+            "quote": "Investigators concluded that erroneous gain settings were the primary cause. The error resulted in a configuration that caused the wing to be unstable at lower Mach numbers than anticipated, causing the vehicle to experience closed-loop flutter. The ARW-1 wing was rebuilt as the ARW-1R and installed in a second DAST vehicle in order to continue the research program.\n[[59]](#footnote-7818-59)\nThe DAST-2 underwent a captive systems-checkout flight beneath the wing of the NB-52B on October 29, 1982, followed by a subcritical-flutter envelope expansion flight 5 days later. Unfortunately, the flight had to be aborted early because of unexplained wing structural vibrations and control-system problems. The next three flight attempts were also aborted-the first because of a drone engine temperature warning, the second because of loss of telemetry, and a third time for unspecified reasons prior to taxi.\n[[60]](#footnote-7818-60)\nFurther testing of the DAST-2 vehicle was conducted using a Navy DC-130A launch aircraft. Following two planned captive flights for systems checkout, the vehicle was ready to fly.\nOn June 1, 1983, the DC-130A departed Edwards as the crew executed a climbing turn over Mojave and California City. Rogers Smith flew the TF-104G with backup pilot Ray Young, while Einar Enevoldson began preflight preparations from the ground cockpit. The airplanes passed abeam of Cuddeback Dry Lake, passed north of Barstow, and turned west. The launch occurred a few minutes later over Harper Dry Lake. Immediately after separation from the launch pylon, the drone's recovery-system drag chute deployed, but the main parachute was jettisoned while still packed in its canister.\n[[61]](#footnote-7818-61)\nThe drone plummeted to the ground in the middle of a farm field west of the lakebed. It was completely destroyed, but other than loss of a small patch of alfalfa at the impact site, there was no property damage. Much later, when it was possible to joke about such things, a few wags referred to this event as the \"alfalfa impact study.\"\n[[62]](#footnote-7818-62)\nAn investigation board found that a combination of several improbable anomalies-a design flaw, a procedural error, and a hardware failure-simultaneously contributed to loss of the vehicle. These included an uncommanded recovery signal produced by an electrical spike, failure to reset a drag chute timer, and improper grounding of an electrical relay. Another section of the investigation focused on project management issues. Criticism of Dryden's DAST program management was hotly debated, and several dissenting opinions were filed along with the main report.\n[[63]](#footnote-7818-63)\nThroughout its history, the DAST program was plagued by difficulties. Between December 1973 and November 1983, five different project managers oversaw the program. As early as December 1978, Dryden's Center Director, Isaac T. Gillam, had requested chief engineer Milton O. Thompson and chief counsel John C. Mathews to investigate management problems associated with the project. This resulted from the project team's failure to meet an October 1978 flight date for the Blue Streak wing, Langley managers' concern that Dryden was not properly discharging its project obligations, repeated requests by the project manager for schedule slips, and various other indications that the project was in a general state of confusion. The resulting report indicated that problems had been caused by a lack of effective planning at Dryden, exacerbated by poor internal communication among project personnel.\n[[64]](#footnote-7818-64)\nOnly 7 flights were achieved in 10 years. Several flights were aborted for various reasons, and two vehicles crashed, problems that drove up testing costs. Meanwhile, flight experiments with higher-profile, better-funded remotely piloted research vehicles took priority over DAST missions at Dryden. Organizational upheaval also took a toll, as Dryden was consolidated with Ames Research Center in 1981 and responsibility for projects was transferred to the Flight Operations Directorate in 1983."
+          },
+          {
+            "node_id": "79006c2d-0593-4cb6-ad24-bec5b6e53a37",
+            "quote": "Researchers conducted eight flights at Dryden during spring 1977. They found that the test vehicle exhibited normal stability and control characteristics throughout the flight envelope for all maneuvers performed. Pitch response appeared to be faster than that of a conventional airplane, apparently because the inertia of the free-wing assembly was lower than that of the complete airplane. Handling qualities appeared to be as good or better than those of the baseline fixed-wing airplane. The investigators noted that separate control of the decoupled fuselage enhanced vehicle performance by acting as pseudo-thrust vectoring. The Free-Wing RPRV had excellent stall/spin characteristics, and the pilot was able to control the aircraft easily under gusty conditions. As predicted, center of gravity changes had little or no effect on longitudinal stability.\n[[49]](#footnote-7818-49)\nSome unique and unexpected problems were also encountered. When the canard encountered a mechanical trailing-edge position limit, it became aerodynamically locked, resulting in an irreversible stall and hard landing. Increased deflection limits for the free canard eliminated this problem. Researchers had difficulty matching the wing-hinge margin (the distance from the wing's aerodynamic center to the pivot) and canard control effectiveness. Designers improved handling qualities by increasing the wing hinge margin, the canard area aft of the pivot, and the canard flap area. Canard pivot friction caused some destabilizing effects during taxi, but these abated during takeoff. The ground pilot experienced control difficulty because wing-fuselage decoupling made it difficult to visually judge approach and landing speeds, but it was concluded that this would not be a problem for a pilot flying a full-scale airplane equipped with conventional flight instruments.\n[[50]](#footnote-7818-50)\nEC83-24496.tif\nA research pilot controls the DAST vehicle from a ground cockpit. NASA.\nDAST: Exploring the Limits of Aeroelastic Structural Design\nIn the early 1970s, researchers at Dryden and NASA Langley Research Center sought to expand the use of RPRVs into the transonic realm. The Drones for Aerodynamic and Structural Testing (DAST) program was conceived as a means of conducting high-risk flight experiments using specially modified Teledyne-Ryan BQM-34E/F Firebee II supersonic target drones to test theoretical data under actual flight conditions. Described by NASA engineers as a \"wind-tunnel in the sky,\" the DAST program merged advances in electronic remote-control systems with advanced airplane-design techniques. The drones were relatively inexpensive and easy to modify for research purposes and, moreover, were readily available from an existing stock of Navy target drones.\n[[51]](#footnote-7818-51)\nThe unmodified Firebee II had a maximum speed of Mach 1.1 at sea level and almost Mach 1.8 at 45,000 feet, and was capable of 5 g turns. Firebee II drones in the basic configuration provided baseline data. Researchers modified two vehicles, DAST-1 and DAST-2, to test several wing configurations during maneuvers at transonic speeds in order to compare flight results with theoretical and wind tunnel findings. For captive and free flights, the drones were carried aloft beneath a DC-130A or the NB-52B. The DAST vehicles were equipped with remotely augmented digital flight control systems, research instrumentation, an auxiliary fuel tank for extended range, and a MARS recovery system. On the ground, a pilot controlled the DAST vehicle from a remote cockpit while researchers examined flight data transmitted via pulse-mode telemetry. In the event of a ground computer failure, the DAST vehicle could also be flown using a backup control system in the rear cockpit of a Lockheed F-104B chase plane.\n[[52]](#footnote-7818-52)\nThe primary flight control system for DAST was remotely augmented. In this configuration, control laws for augmenting the airplane's flying characteristics were programmed into a general-purpose computer on the ground. Closed-loop operation was achieved through a telemetry uplink/downlink between the ground cockpit and the vehicle. This technique had previously been tested using the F-15 RPRV.\n[[53]](#footnote-7818-53)\nBaseline testing was conducted between November 1975 and June 1977, using an unmodified BQM-34F drone. It was carried aloft three times for captive flights, twice by a DC-130A and once by the NB-52B. These flights gave ground pilot William H. Dana a chance to check out the RPRV systems and practice prelaunch procedures. Finally, on July 28, 1977, the Firebee II was launched from the NB-52B for the first time. Dana flew the vehicle using an unaugmented control mode called Babcock-direct. He found the Firebee less controllable in roll than had been indicated in simulations, but overall performance was higher."
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false,
+          "context_mapping_normalization": "Remove only leading <N-hop> followed by blank line; stored original contexts unchanged."
+        }
+      }
+    },
+    {
+      "id": "aa9b4fa7-687f-586a-9864-04e1c0607a89",
+      "input": "How did the CCV F-104G and X-29 illustrate reduced static stability and control of highly unstable aircraft, and how did their destabilizing configurations and fly-by-wire architectures differ?",
+      "expected_output": "The CCV F-104G and X-29 both used fly-by-wire flight controls to investigate aircraft with strongly negative static stability margins, but their configurations and control architectures differed. The CCV F-104G was a modified Luftwaffe aircraft equipped with a quadruplex digital flight control system. Its canard, made from another F-104G horizontal tail, was mounted behind the cockpit at a fixed negative incidence of 4 degrees. This modification, together with a large jettisonable weight beneath the aft fuselage and internal fuel transfer, could move the center of gravity rearward and produce a negative stability margin of up to 20 percent. Its research program investigated the flying qualities of a highly unstable, high-performance aircraft with digital controls and concluded in 1984 after 176 flights. The X-29 combined forward-swept wings with large movable canards and had a longitudinal static stability margin of -35 percent, making it more unstable by the reported margin. Its advanced fly-by-wire system used digital computers for primary control and analog computers for backup. Variable-camber wing surfaces, aft fuselage strake flaps, and fully movable canards were incorporated into its control system to maintain control of the highly unstable aircraft. Unlike the fixed-incidence canard described for the CCV F-104G, the X-29 canards were movable control surfaces. The X-29 demonstrated good controllability at very high angles of attack, illustrating how advanced flight controls could enable successful flight despite extreme longitudinal instability.",
+      "metadata": {
+        "case_id": "ragas-row-88",
+        "origin": "ragas_import",
+        "dataset_role": "ragas_import",
+        "question_type": "ragas_multi_hop_abstract",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "unknown_from_export",
+        "provenance": {
+          "source_file": "nasa-rag-testset-200-chunks-400.json",
+          "source_sha256": "31c176152807905aa7351227a6d8ba2023080da8809ab8b780a2db68052bc33e",
+          "row_index_zero_based": 88,
+          "synthesizer_name": "multi_hop_abstract_query_synthesizer",
+          "original_row": {
+            "user_input": "How did the CCV F-104G and X-29 illustrate reduced static stability and control of highly unstable aircraft, and how did their destabilizing configurations and fly-by-wire architectures differ?",
+            "reference": "The CCV F-104G and X-29 both used fly-by-wire flight controls to investigate aircraft with strongly negative static stability margins, but their configurations and control architectures differed. The CCV F-104G was a modified Luftwaffe aircraft equipped with a quadruplex digital flight control system. Its canard, made from another F-104G horizontal tail, was mounted behind the cockpit at a fixed negative incidence of 4 degrees. This modification, together with a large jettisonable weight beneath the aft fuselage and internal fuel transfer, could move the center of gravity rearward and produce a negative stability margin of up to 20 percent. Its research program investigated the flying qualities of a highly unstable, high-performance aircraft with digital controls and concluded in 1984 after 176 flights. The X-29 combined forward-swept wings with large movable canards and had a longitudinal static stability margin of -35 percent, making it more unstable by the reported margin. Its advanced fly-by-wire system used digital computers for primary control and analog computers for backup. Variable-camber wing surfaces, aft fuselage strake flaps, and fully movable canards were incorporated into its control system to maintain control of the highly unstable aircraft. Unlike the fixed-incidence canard described for the CCV F-104G, the X-29 canards were movable control surfaces. The X-29 demonstrated good controllability at very high angles of attack, illustrating how advanced flight controls could enable successful flight despite extreme longitudinal instability.",
+            "synthesizer_name": "multi_hop_abstract_query_synthesizer"
+          },
+          "edits": []
+        },
+        "reference_context_ids": [
+          "cb60badd-b4bb-4c64-a0f4-2c5bff8e6aa0",
+          "c4900e3c-bf0e-4374-a5f4-56e466566155"
+        ],
+        "source_documents": [
+          {
+            "node_id": "cb60badd-b4bb-4c64-a0f4-2c5bff8e6aa0",
+            "document_id": "nasa:049c6dc4b5c43fc9d0906aff0801b90f0878d292deacd1ee07d2cf835ee7b7b0",
+            "title": "NASA’s Contributions To Aeronautics - Volume 1",
+            "chunk_index": 427,
+            "sha256": "bfa3757bf288be0a15ba26f180d916ea18349ab456f4031c5013ca1c6f832c7e"
+          },
+          {
+            "node_id": "c4900e3c-bf0e-4374-a5f4-56e466566155",
+            "document_id": "nasa:049c6dc4b5c43fc9d0906aff0801b90f0878d292deacd1ee07d2cf835ee7b7b0",
+            "title": "NASA’s Contributions To Aeronautics - Volume 1",
+            "chunk_index": 426,
+            "sha256": "ab30dd33649b8f064f7aa80b705744c75da80b736a09ef31b1f1f9342db40948"
+          }
+        ],
+        "evidence": [
+          {
+            "node_id": "cb60badd-b4bb-4c64-a0f4-2c5bff8e6aa0",
+            "quote": "In Japan, the CCV approach that was taken involved modification of a Mitsubishi T-2 jet training aircraft. Horizontal canards were fitted to reduce static stability, and an all-movable vertical surface was added to the forward fuselage to enable direct side force control investigations. The existing wing-mounted flaps were modified to enable direct lift control and maneuver load control studies. A triply redundant digital fly-by-wire flight control system was installed with quadruplex pilot force sensors used to sense stick and rudder pedal forces and aircraft motion sensors. Aircraft motion sensors (such as pitch, roll, and yaw rate gyros, and vertical and lateral acceleration sensors) were also quadruplex. The original mechanical flight control system was retained as a backup mode. Three identical digital computers processed sensor signals, and the resultant command signals were used to control the horizontal stabilizer, leading and trailing edge flaps, rudder, and vertical canard. Electrohydraulic actuators converted electrical signals into mechanical inputs for the control surface actuators. The CCV T-2 first flew in August 1983. After 24 flights by Mitsubishi, the aircraft was delivered to the Japanese Technical Research Development Institute (TRDI) at Gifu Air Base in March 1984 for government flight-testing, which was completed in March 1986.\n[[120]](#footnote-732-120)\nThese research programs (along with the Soviet Projekt 100LDU testbed discussed earlier) provided invaluable hands-on experience with state-of-the-art flight control technologies. Data from the Jaguar ACT and the CCV F-104G supported the Experimental Aircraft Program (EAP) and contributed to the technology base for the Anglo-German-Italian-Spanish Eurofighter multirole fighter, now known as the Typhoon. Many other advanced aircraft development programs, including the French Rafale, the Mitsubishi F-2 fighter, the Russian Su-27 family of fighters and attack aircraft, and the entire family of Airbus airliners, were the beneficiaries of these research efforts. In addition, the importance of the infusion of technology made possible by open dissemination of NASA technical publications should not be underestimated.\nX-29\nThe Grumman X-29 research aircraft played a very interesting role in the evolution of modern fly-by-wire flight control systems. Exotic in appearance, with its forward-swept wings and large movable canard control surfaces, the X-29 was highly unstable about the longitudinal axis with a static stability margin of -35 percent. This level of instability probably indicates that the X-29 represents the most unstable piloted aircraft that has ever been successfully flown. Not only did it fly, but it also demonstrated good controllability at very high angles of attack. This degree of success was only possible through the use of a very advanced fly-by-wire flight control system that employed a combination of both digital computers in the primary system and analog computers in the backup system. The program began in 1977, with the Defense Advanced Research Projects Agency (DARPA) and the Air Force Flight Dynamics Laboratory jointly soliciting industry proposals for a research aircraft designed to investigate the forward-swept wing concept in a high-performance aircraft application. In December 1981, Grumman Aircraft was selected to build two aircraft, which were designated X-29. The most unique and visually obvious aspect of the design was the forward-swept wings that incorporated a thin supercritical airfoil, but there were many other areas of the X-29 design that embodied advanced technology. The aircraft used advanced composite materials and unusual construction approaches. Its control system made use of variable camber wing surfaces, aft fuselage-mounted strake flaps, fully movable canards mounted on the sides of the engine inlets, and a computerized fly-by-wire flight control system to maintain control of the otherwise highly unstable aircraft.\n[[121]](#footnote-732-121)\nEC87-0182-14[1].tif\nThe X-29 represents the most unstable piloted aircraft that has ever successfully flown. NASA."
+          },
+          {
+            "node_id": "c4900e3c-bf0e-4374-a5f4-56e466566155",
+            "quote": "Capitalizing on their earlier experience with analog fly-by-wire flight control research, by early 1975 the Germans had begun a flight research program to investigate the flying qualities of a highly unstable high-performance aircraft equipped with digital flight controls. For this purpose, they modified a Luftwaffe Lockheed F-104G to incorporate a quadruplex digital flight control system. Known as the CCV F-104G, it featured a canard (consisting of another F-104G horizontal tail) mounted at a fixed negative incidence angle of 4 degrees, on the upper fuselage behind the cockpit and a large jettisonable weight carried under the aft fuselage. These features, in conjunction with internal fuel transfer, were capable of moving the aircraft's center of gravity rearward to create a negative stability margin of up to 20 percent. The CCV F-104G flew for the first time in 1977 from the German flight research center at Manching, with flight-testing of the aircraft in the canard configuration beginning in 1980. The CCV F-104G test program ended in 1984 after 176 flights.\n[[117]](#footnote-732-117)\nU.K. Jaguar ACT\nIn the U.K., the Royal Aircraft Establishment began an effort oriented to producing a CCV testbed in 1977. For this purpose, an Anglo-French Jaguar strike fighter was modified by British Aerospace (BAe) to prove the feasibility of active control technology. Known as the Jaguar Active Control Technology (ACT), the aircraft's mechanical flight control system was entirely removed and replaced with a quad-redundant digital fly-by-wire control system that used electrical channels to relay instructions to the flight control surfaces. The initial flight of the Jaguar ACT with the digital FBW system was in October 1981. As with the CCV F-104G, ballast was added to the aft fuselage to move the center of gravity aft and destabilize the aircraft. In 1984, the Jaguar ACT was fitted with rounded oversized leading-edge strakes to move the center of lift of the aircraft forward, further contributing to pitch instability. It first flew in this configuration in March 1984. Marconi developed the Jaguar ACT flight control system. It included an optically coupled data transmission link that was essentially similar to the one that they had developed for the U.S. Air Force YC-14 program (an interesting example of the rapid proliferation of advanced aerspace technology between nations).\n[[118]](#footnote-732-118)\nFlight-testing began in 1981, with the test program ending in 1984 after 96 flights.\n[[119]](#footnote-732-119)\nFrench Mirage NG\nAlthough not intended purely as a research aircraft, the French Dassault Mirage 3NG (Nouvelle Generation) was a greatly modified Mirage IIIE single-engine jet fighter that was used to demonstrate the improved air combat performance advantages made possible using relaxed static stability and fly-by-wire. One prototype was built by Dassault; modifications included destabilizing canards, extended wing root leading edges, an analog-computer-controlled fly-by-wire flight control system (based on that used in the production Mirage 2000 fighter), and the improved Atar 9K-50 engine. The Mirage 3NG first flew in December 1982, demonstrating significant performance improvements over the standard operational Mirage IIIE. These were claimed to include a 20-25-percent reduction in takeoff distance, a 40-percent improvement in time to reach combat altitude, a nearly 10,000-foot increase in supersonic ceiling, and similarly impressive gains in acceleration, instantaneous turn rate, and combat air patrol time.\nJapanese CCV T-2"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false,
+          "context_mapping_normalization": "Remove only leading <N-hop> followed by blank line; stored original contexts unchanged."
+        }
+      }
+    },
+    {
+      "id": "5b6f141a-fa82-5475-af7d-f24a72dfb41c",
+      "input": "How did the 1962 emergency landing at Mud Lake lead to the X-15A-2 configuration, and what did subsequent simulator studies reveal about thrust-loss recovery options and launch-site constraints for its external-tank flights from Mud Lake?",
+      "expected_output": "On 9 November 1962, Jack McKay made an emergency landing at Mud Lake after the XLR99 engine became stuck at 35-percent power. Failed wing flaps and unjettisoned propellant contributed to a landing speed of 257 knots. The left rear skid failed at touchdown, and the airplane flipped over, seriously injuring McKay and causing major, but repairable, damage to the X-15-2. Six months later, the Air Force awarded North American a contract to modify the damaged aircraft into the advanced X-15A-2 configuration, which eventually enabled the program to meet its original speed goal of 6,600 fps, or Mach 6.5.\n\nIn early 1965, Johnny Armstrong used the hybrid simulator to study X-15A-2 glide capability by terminating thrust at different points along a Mach 8 flight profile. For external-tank flights, planners needed to identify when a pilot should continue toward a forward emergency lake rather than turn back, and whether emergency lakes remained reachable from the tank-drop point. The desired arrival altitude was at least 20,000 feet.\n\nFor a Mud Lake launch, external-tank impact considerations required launching from the east side of the lake. After 53 seconds of engine thrust, the pilot could either continue to Grapevine Lake, arriving at 43,000 feet, or return to Mud Lake, arriving at 11,000 feet, only 6,000 feet above the lake. Thus, the forward option exceeded the desired emergency-arrival altitude, while the return option fell below it.\n\nThe studies supported using Mud Lake or Edwards Creek Valley for high-speed flights rather than Smith Ranch, which had significant gaps in emergency landing coverage. Mud Lake also offered a tank recovery area entirely within Restricted Area R-4907, with only minor use-rights difficulties, but its limited distance from Edwards prevented exploitation of the full potential of the advanced aircraft. Ultimately, no launches occurred from Edwards Creek Valley because the program stopped at Mach 6.7 rather than proceeding to Mach 8. All three external-tank flights with full tanks launched from Mud Lake.",
+      "metadata": {
+        "case_id": "ragas-row-140",
+        "origin": "ragas_import",
+        "dataset_role": "ragas_import",
+        "question_type": "ragas_multi_hop_specific",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "unknown_from_export",
+        "provenance": {
+          "source_file": "nasa-rag-testset-200-chunks-400.json",
+          "source_sha256": "31c176152807905aa7351227a6d8ba2023080da8809ab8b780a2db68052bc33e",
+          "row_index_zero_based": 140,
+          "synthesizer_name": "multi_hop_specific_query_synthesizer",
+          "original_row": {
+            "user_input": "How did the 1962 emergency landing at Mud Lake lead to the X-15A-2 configuration, and what did subsequent simulator studies reveal about thrust-loss recovery options and launch-site constraints for its external-tank flights from Mud Lake?",
+            "reference": "On 9 November 1962, Jack McKay made an emergency landing at Mud Lake after the XLR99 engine became stuck at 35-percent power. Failed wing flaps and unjettisoned propellant contributed to a landing speed of 257 knots. The left rear skid failed at touchdown, and the airplane flipped over, seriously injuring McKay and causing major, but repairable, damage to the X-15-2. Six months later, the Air Force awarded North American a contract to modify the damaged aircraft into the advanced X-15A-2 configuration, which eventually enabled the program to meet its original speed goal of 6,600 fps, or Mach 6.5.\n\nIn early 1965, Johnny Armstrong used the hybrid simulator to study X-15A-2 glide capability by terminating thrust at different points along a Mach 8 flight profile. For external-tank flights, planners needed to identify when a pilot should continue toward a forward emergency lake rather than turn back, and whether emergency lakes remained reachable from the tank-drop point. The desired arrival altitude was at least 20,000 feet.\n\nFor a Mud Lake launch, external-tank impact considerations required launching from the east side of the lake. After 53 seconds of engine thrust, the pilot could either continue to Grapevine Lake, arriving at 43,000 feet, or return to Mud Lake, arriving at 11,000 feet, only 6,000 feet above the lake. Thus, the forward option exceeded the desired emergency-arrival altitude, while the return option fell below it.\n\nThe studies supported using Mud Lake or Edwards Creek Valley for high-speed flights rather than Smith Ranch, which had significant gaps in emergency landing coverage. Mud Lake also offered a tank recovery area entirely within Restricted Area R-4907, with only minor use-rights difficulties, but its limited distance from Edwards prevented exploitation of the full potential of the advanced aircraft. Ultimately, no launches occurred from Edwards Creek Valley because the program stopped at Mach 6.7 rather than proceeding to Mach 8. All three external-tank flights with full tanks launched from Mud Lake.",
+            "synthesizer_name": "multi_hop_specific_query_synthesizer"
+          },
+          "edits": []
+        },
+        "reference_context_ids": [
+          "606c7951-cef2-4e48-b3f4-db8a02e9b3f9",
+          "0d899a84-d142-44c3-a11c-519c641d13f8"
+        ],
+        "source_documents": [
+          {
+            "node_id": "606c7951-cef2-4e48-b3f4-db8a02e9b3f9",
+            "document_id": "nasa:9a800e9a2119fa47c9649ad459d31231a75141ce3b9bf2eca68a8bef3ee302df",
+            "title": "X-15 Extending the Frontiers of Flight",
+            "chunk_index": 360,
+            "sha256": "81227b98e7d4e6e1a2d6763c7d3beb735fbe7e6d5e066e7386216b8f21f06839"
+          },
+          {
+            "node_id": "0d899a84-d142-44c3-a11c-519c641d13f8",
+            "document_id": "nasa:9a800e9a2119fa47c9649ad459d31231a75141ce3b9bf2eca68a8bef3ee302df",
+            "title": "X-15 Extending the Frontiers of Flight",
+            "chunk_index": 236,
+            "sha256": "9eb5acf7474c1293b1085067126a45061e8067fac999d6ffec85926c0d8e9341"
+          }
+        ],
+        "evidence": [
+          {
+            "node_id": "606c7951-cef2-4e48-b3f4-db8a02e9b3f9",
+            "quote": "Jack McKay made an emergency landing at Mud Lake on 9 November 1962 after the XLR99 stuck at 35-percent power on Flight 2-31-52. Unfortunately, the wing flaps failed and the airplane was heavy with unjettisoned propellant, resulting in a very high 257-knot landing speed. As McKay touched down, the left rear skid failed and the airplane flipped over. Since Mud was a designated emergency landing site for this flight, fire trucks were standing by and paramedics were orbiting in a C-130 transport. McKay was airlifted to the hospital at Edwards with serious injuries. McKay recovered and flew 22 more X-15 flights and the X-15-2 was rebuilt into the advanced X-15A-2. (NASA)\nAlthough the post-flight report stated that the \"pilot injuries were not serious,\" in reality Jack McKay had suffered several crushed vertebra that made him an inch shorter than when the flight had begun. Nevertheless, five weeks after his accident, McKay was in the control room as the NASA-1 for Bob White's last X-15 flight (3-12-22). McKay would go on to fly 22 more X-15 flights, but would ultimately retire from NASA because of lasting effects from this accident.\n[[198]](#filepos777346)\nX-15-2 had not fared any better-the damage was major, but not total. On 15 November 1962, the Air Force and NASA appointed an accident board with Donald R. Bellman as chair. The board released its findings, which contained no surprises, in a detailed report distributed during December 1962. Six months after the Mud Lake accident, the Air Force awarded North American a contract to modify X-15-2 into an advanced configuration that eventually allowed the program to meet its original speed goal of 6,600 fps (Mach 6.5). Because of the basic airplane's ever-increasing weight, it had been unable to do this, by a small margin.\n[[199]](#filepos777490)"
+          },
+          {
+            "node_id": "0d899a84-d142-44c3-a11c-519c641d13f8",
+            "quote": "Johnny Armstrong carried out a further analysis of X-15A-2 flight profiles in early 1965 using the hybrid simulator. For instance, Armstrong studied the glide capability of the X-15A-2 by terminating engine thrust at different times along the Mach 8 profile. For X-15A-2 flights with external tanks, there were two critical points along the flight profile with regard to emergency landing sites. The first point was the decision to either to continue straight ahead to a forward landing site or initiate a turn to a landing site behind the airplane. The geographical location of potential emergency landing sites determined the length of this period. Second, the flight planners had to consider emergency lake coverage from the tank drop point. In all cases, it was desirable to arrive at the emergency landing lake at an altitude of 20,000 feet or greater.\n[[109]](#filepos234059)\nIn his preliminary study the previous summer, Armstrong had concluded that launches from Mud Lake needed to be conducted from the east side of the lake because of external tank impact considerations, and this condition still held true. If a pilot was considering contingency landing sites, the critical time for a launch from Mud Lake was after 53 seconds of engine thrust; at that point it was possible to either continue forward to Grapevine Lake or turn around and land at Mud Lake. If the pilot elected to continue forward, he would arrive at Grapevine at an altitude of 43,000 feet. Returning to Mud Lake would result in an altitude of 11,000 feet (or 6,000 feet above Mud Lake).\n[[110]](#filepos234287)\nThe simulations also showed that adequate emergency lake coverage was not available for a Smith Ranch launch. There was a period of 29-31 seconds (depending upon the exact launch point) during which the X-15 could not go forward or turn around and arrive at the emergency landing site at 20,000 feet altitude. Worse, there was a period of 4-7 seconds in which it was not even possible to arrive at the emergency lakes at 5,000 feet altitude. In other words, given that Mud Lake was at 5,000 feet altitude, the pilot could not even make a straight-in approach if the engine shut down during the critical time. Additionally, if the engine shut down during external tank separation, the X-15A-2 could not go forward to Mud Lake and would have to return to Smith Ranch, arriving with only 5,000 feet altitude.\n[[111]](#filepos235081)\nThe use of Edwards Creek Valley as a launch lake allowed the pilot to attempt a straight-in approach at either Smith Ranch or Mud Lake if the engine shut down at a critical time. There was even a small period in which the pilot could elect to abort to either lake. Once the pilot jettisoned the tanks, he could turn the airplane back to Smith Ranch, arriving at 5,000 feet. Given this analysis, the program decided that X-15A-2 high-speed flights would proceed from either Mud Lake or Edwards Creek Valley. The tank recovery area for Mud Lake launches was entirely within Restricted Area R-4907 and posed only minor problems for securing use rights; however, the Air Force needed to acquire use rights for civilian property in the anticipated drop areas for Edwards Creek Valley (and Smith Ranch) launches.\n[[112]](#filepos235832)\nThe Air Force would launch the initial X-15A-2 flights from Mud Lake, but would not exploit the full potential of the advanced aircraft because of the limited distance between Mud Lake and Edwards. The program now expected to launch subsequent flights from Edwards Creek Valley based on two considerations: first, the airplane had slightly better gliding performance than anticipated, eliminating most of the gaps in emergency lake coverage from Smith Ranch; second, there had been some difficulties obtaining adequate external tank drop areas from Edwards Creek Valley. As it turned out, there never were any launches from Edwards Creek Valley since the X-15A-2 program stopped at Mach 6.7 instead of proceeding to Mach 8. Of the four flights with external tanks, the program launched the first (with empty tanks) from Cuddeback, and the three flights with full tanks from Mud.\n[[113]](#filepos236028)"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false,
+          "context_mapping_normalization": "Remove only leading <N-hop> followed by blank line; stored original contexts unchanged."
+        }
+      }
+    },
+    {
+      "id": "0ccd8925-45d9-5340-8f9a-eb0bcad42d80",
+      "input": "How did the lifting-body studies at Edwards, California, reflect decentralized research and validate unpowered spacecraft landings?",
+      "expected_output": "The lifting-body program at Edwards, California, involved aircraft associated with different research organizations: the U.S. Air Force X-24A, the FRC M2-F3, and the Langley HL-10. This participation reflects the broader research environment described in the context, where NASA laboratories and outside organizations pursued competing ideas and methods, encouraging new approaches and the reevaluation of established ones. The wingless lifting bodies investigated maneuvering and landing an aerodynamic craft designed for reentry from space. After air launch from a B-52 and rocket-powered flight, they made unpowered approaches and landings, helping validate the concept that a space shuttle could land accurately without power.",
+      "metadata": {
+        "case_id": "ragas-row-149",
+        "origin": "ragas_import",
+        "dataset_role": "ragas_import",
+        "question_type": "ragas_multi_hop_specific",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "unknown_from_export",
+        "provenance": {
+          "source_file": "nasa-rag-testset-200-chunks-400.json",
+          "source_sha256": "31c176152807905aa7351227a6d8ba2023080da8809ab8b780a2db68052bc33e",
+          "row_index_zero_based": 149,
+          "synthesizer_name": "multi_hop_specific_query_synthesizer",
+          "original_row": {
+            "user_input": "How did the lifting-body studies at Edwards, California, reflect decentralized research and validate unpowered spacecraft landings?",
+            "reference": "The lifting-body program at Edwards, California, involved aircraft associated with different research organizations: the U.S. Air Force X-24A, the FRC M2-F3, and the Langley HL-10. This participation reflects the broader research environment described in the context, where NASA laboratories and outside organizations pursued competing ideas and methods, encouraging new approaches and the reevaluation of established ones. The wingless lifting bodies investigated maneuvering and landing an aerodynamic craft designed for reentry from space. After air launch from a B-52 and rocket-powered flight, they made unpowered approaches and landings, helping validate the concept that a space shuttle could land accurately without power.",
+            "synthesizer_name": "multi_hop_specific_query_synthesizer"
+          },
+          "edits": []
+        },
+        "reference_context_ids": [
+          "135381bc-92a3-42df-b51e-22479fc41a56"
+        ],
+        "source_documents": [
+          {
+            "node_id": "135381bc-92a3-42df-b51e-22479fc41a56",
+            "document_id": "nasa:c2c9dd9a1821d0bc60e67189726ac6fde8f41f21ce01db21f2320919a8522484",
+            "title": "NASA's First 50 Years: Historical Perspectives",
+            "chunk_index": 142,
+            "sha256": "7197e713cc7c6e98d9c2c73bb54a67a5e5552daacf2bed42e1428e12260931ee"
+          }
+        ],
+        "evidence": [
+          {
+            "node_id": "135381bc-92a3-42df-b51e-22479fc41a56",
+            "quote": "From a cynical standpoint, the proliferation of methodologies arising from NASA's institutional structure appears no more than bureaucratic infighting. This is only partially true. At one level, there was a competition between ideas and methods, and not just among the NASA laboratories, but also with outside organizations, such as the U.S. Air Force. As in science, generally, the prestige of a winning idea was, for many at NASA, sufficient incentive. At another level, the competition was sometimes more narrowly about resource allocation and program control. Regardless of the nature of the competition, NASA's decentralized structure has had a lasting impact, encouraging new methods and the reevaluation of traditional ones. It almost goes without saying that NASA's scientific and technological narrative would have been quite different had all of its research been conducted under one roof. To nurture new ideas requires a willingness to support duplicate lines of inquiry (often off-budget ideas), potentially cannibalizing successful teams and methods. Naturally, this would be contrary to a unitary organizational structure with a centralized research infrastructure and administration.\n9.5 3 DFRC vehicles GPN-2000-001945.tif\nFigure 5: The wingless lifting body aircraft sitting on Rogers Dry Lake at what is now NASA's DFRC, Edwards, California. From left to right: the U.S. Air Force X-24A, FRC M2-F3, and Langley HL-10. The lifting body aircraft studied the feasibility of maneuvering and landing an aerodynamic craft designed for reentry from space. These lifting bodies were air-launched by a B-52 mother ship; they then flew powered by their own rocket engines before making an unpowered approach and landing. They helped validate the concept that a space shuttle could make accurate landings without power. The X-24A flew from 17 April 1969 to 4 June 1971. The M2-F3 flew from 2 June 1970 to 21 December 1971. The HL-10 flew from 22 December 1966 to 17 July 1970 and logged the highest and fastest records in the lifting body program. NASA Image EC69-2358\nMacro-Technological Change\nMacro-technological change refers to external or broader technological innovations that serve as inputs to methodological changes at the laboratories. The prime and most powerful example of this is the rise of electronic computers, which set the stage for CFD (not to mention a revolution in avionics and digital flight control).\n[[15]](#footnote-33414-15)\nIn turn, CFD was one of the most disruptive of the new research methodologies. This progression suggests a kind of logical unfolding of technological innovation (e.g., automobiles follow horse-drawn carriages). This is somewhat the case, but it is important to understand that the particular shape of CFD, the motivation and timing behind its emergence as well as its political support, could not have been scripted as part of a logical and predictable technical evolution.\n[[16]](#footnote-33414-16)\nIn 1958, electronic computers were already a part of NASA's infrastructure. Aeronautics researchers employed them in conjunction with the tunnel branches, helping sift through test data as well as performing some of the less complex mathematical crunching. To use computers as virtual wind tunnels, however, was a different proposition. The mathematical formulas that describe the motion of fluids, the Navier-Stokes equations, are a set of nonlinear, second-order, partial differential equations. The complexity of these equations meant that they could not be programmed into computers. Some researchers, however, realized that simpler mathematical techniques, amenable to programming, could approximate more complex fluid flow equations; indeed, engineers had long made use of such shortcuts in design calculations.\n[[17]](#footnote-33414-17)\nOne of the chief advocates of this approach was Harvard Lomax of the Ames Theoretical Division. He wrote his first programs for use on an IBM 650, a 1950s-era computer, and proceeded to make use of newer IBM and Control Data Corporation equipment in the 1960s. Lomax's group focused on converting the Navier-Stokes equations into algebraic approximations that computers could solve through a technique called finite difference. Lomax and his team also reduced the number of calculations that had to be performed by solving for select points in the flow stream.\n[[18]](#footnote-33414-18)"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false,
+          "context_mapping_normalization": "Remove only leading <N-hop> followed by blank line; stored original contexts unchanged."
+        }
+      }
+    },
+    {
+      "id": "3fbce9b0-302b-5c50-8a32-08e406e0d06e",
+      "input": "How did weight growth in the X-48A complicate its engine-out stall dynamic-scaling objective, and how did these technical difficulties combine with cost and NASA resource pressures to threaten the demonstrator program?",
+      "expected_output": "The X-48A, also called the BWB-LSV, faced substantial weight growth that complicated efforts to meet its flight-research requirements. Its design operating empty weight was 2,300 pounds, compared with a stated maximum of 1,600 pounds and an original goal of 1,243 pounds. Despite major weight-reduction efforts, NASA Langley researcher Robert McKinley considered a reduction below 2,000 pounds highly unlikely. Boeing liaison Blaine Rawdon explained that achieving the necessary light weight in a small version of an optimized large airliner required both discipline-specific attention and an overarching focus on total aircraft weight.\n\nThese weight difficulties coincided with disagreement over research requirements. Boeing sought a vehicle capable of meeting the dynamic-scaling goal for engine-out stall by determining the asymmetric minimum control airspeed, V_MCA, in flight. NASA principals regarded this as a worthwhile objective but believed that physics would likely prevent its determination in flight. The unresolved weight and requirements issues contributed to the October 5, 2000, work stoppage, pending agreement between NASA and Boeing. McKinley stated that the project could proceed to design and commitment reviews if an acceptable compromise emerged; otherwise, work on the vehicle would likely end.\n\nCost and resource pressures further weakened the prospects for continuation. The estimated final net cost was approximately $16 million, with first flight projected around December 2003. NASA funding commitments were at risk, while Dryden personnel were needed for space-related work and Langley personnel for other activities. Boeing increasingly believed that the uncertain likelihood of success and the high cost of continuing could derail the broader BWB program, prompting plans for a smaller, lower-cost demonstrator. The context indicates that the X-48A program may ultimately have ended quietly through omission of funding from the following budget, although no formal termination order or report was located.",
+      "metadata": {
+        "case_id": "ragas-row-156",
+        "origin": "ragas_import",
+        "dataset_role": "ragas_import",
+        "question_type": "ragas_multi_hop_specific",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "unknown_from_export",
+        "provenance": {
+          "source_file": "nasa-rag-testset-200-chunks-400.json",
+          "source_sha256": "31c176152807905aa7351227a6d8ba2023080da8809ab8b780a2db68052bc33e",
+          "row_index_zero_based": 156,
+          "synthesizer_name": "multi_hop_specific_query_synthesizer",
+          "original_row": {
+            "user_input": "How did weight growth in the X-48A complicate its engine-out stall dynamic-scaling objective, and how did these technical difficulties combine with cost and NASA resource pressures to threaten the demonstrator program?",
+            "reference": "The X-48A, also called the BWB-LSV, faced substantial weight growth that complicated efforts to meet its flight-research requirements. Its design operating empty weight was 2,300 pounds, compared with a stated maximum of 1,600 pounds and an original goal of 1,243 pounds. Despite major weight-reduction efforts, NASA Langley researcher Robert McKinley considered a reduction below 2,000 pounds highly unlikely. Boeing liaison Blaine Rawdon explained that achieving the necessary light weight in a small version of an optimized large airliner required both discipline-specific attention and an overarching focus on total aircraft weight.\n\nThese weight difficulties coincided with disagreement over research requirements. Boeing sought a vehicle capable of meeting the dynamic-scaling goal for engine-out stall by determining the asymmetric minimum control airspeed, V_MCA, in flight. NASA principals regarded this as a worthwhile objective but believed that physics would likely prevent its determination in flight. The unresolved weight and requirements issues contributed to the October 5, 2000, work stoppage, pending agreement between NASA and Boeing. McKinley stated that the project could proceed to design and commitment reviews if an acceptable compromise emerged; otherwise, work on the vehicle would likely end.\n\nCost and resource pressures further weakened the prospects for continuation. The estimated final net cost was approximately $16 million, with first flight projected around December 2003. NASA funding commitments were at risk, while Dryden personnel were needed for space-related work and Langley personnel for other activities. Boeing increasingly believed that the uncertain likelihood of success and the high cost of continuing could derail the broader BWB program, prompting plans for a smaller, lower-cost demonstrator. The context indicates that the X-48A program may ultimately have ended quietly through omission of funding from the following budget, although no formal termination order or report was located.",
+            "synthesizer_name": "multi_hop_specific_query_synthesizer"
+          },
+          "edits": []
+        },
+        "reference_context_ids": [
+          "9c9d017e-61c4-4657-b3fa-b5ab77a98834"
+        ],
+        "source_documents": [
+          {
+            "node_id": "9c9d017e-61c4-4657-b3fa-b5ab77a98834",
+            "document_id": "nasa:be709d1fc040776f002a9ed602f28137cffe386845866c8044dac7ef1fbe34d1",
+            "title": "Beyond Tube-and-Wing: The X-48 Blended Wing-Body and NASA's Quest to Reshape Future Transport Aircraft",
+            "chunk_index": 86,
+            "sha256": "e658f7a8f24f675d69931598db65e46f4b17f04b7abb6231afbd70ced47f841d"
+          }
+        ],
+        "evidence": [
+          {
+            "node_id": "9c9d017e-61c4-4657-b3fa-b5ab77a98834",
+            "quote": "As well, the LSV (X-48A, as the Air Force had designated it) was encountering its own technical problems, particularly weight growth. Blaine Rawdon (one of the Boeing liaisons for the program, along with George Rowland) pointed out that \"the problem with a small version of an optimized large airliner is that achieving the needed light weight is very difficult.... To succeed, each discipline needs a sharp focus on the vehicle's weight and there must also be an overarching focus\" because there can be a tendency of engineers working in each separate discipline to focus their attention on the function of their particular component rather than on the overall function of the airplane.\n[55](#endnote-055-4)\nBoeing's concerns regarding increasing weights, which were noted by Rawdon and others, most likely played a role in the project's cancellation. In any event, Boeing became increasingly convinced that the overall likelihood of success and the high cost of continuing had the potential to derail the BWB program and that it was time to plan for an alternate, smaller, and lower-cost demonstrator.\n[56](#endnote-056-4)\nNASA Langley's Robert McKinley, in his October 9, 2000, overview report noted:\nOn 5 October 2000, all work on the BWB-LSV Project was stopped until the NASA Project and Program Offices and Boeing management can agree upon some specific design requirements. Boeing is aggressively lobbying for a vehicle that can meet the dynamic-scaling goal for engine-out stall (i.e., define the asymmetric minimum control airspeed,\n*V*\nMCA\n) in flight. The BWB-LSV principals at NASA...agree that this is a noble goal; however, the physics will likely rule out defining this point in flight.\n[57](#endnote-057-4)\nMcKinley went on to address overweight issues with the LSV, noting that the current design LSV Operating Empty Weight (OEW) was 2,300 pounds, while the OEW weight should not exceed 1,600 pounds. He added that when all of the vehicle systems, flight envelope limits, and structural margins were set, the original OEW goal of 1,243 pounds still was not feasible. Furthermore, even with the major weight reduction efforts that the team had made, McKinley believed that reducing the OEW below 2,000 pounds was highly unlikely. Finally, McKinley made the following overall project observation:\nThis situation has precipitated the work stoppage noted above, pending resolution of the requirements by the project partners. If an acceptable compromise can be reached, the project may continue to Preliminary Design Review (PDR) and the associated Commitment Review (CR) in late 2000 or early 2001. If a compromise is not feasible, work on the LSV itself will likely end.\n[58](#endnote-058-4)\nMcKinley also connected the overweight issue with the reallocation of resources noted above, adding:\nThe conflict over vehicle weight and other related issues is also being waged inside NASA. Resources, both workforce and financial, are under attack at NASA-LaRC and at NASA-DFRC. Dryden is an integral partner in this activity, especially in terms of the flight control system, operations, and the actual flight research. Funding under the original \"handshake\" agreements...is now at risk due to other pressures, and workforce is needed for space-related activities at Dryden. At Langley, the workforce is needed to support a variety of other activities. Both Centers will (hopefully) re-enlist their support at the CR following the PDR. Current estimates place the final net cost of the BWB-LSV at around $16M with a first flight around December 2003.\n[59](#endnote-059-4)\nThere are indications that, due to a combination of the issues noted above, the program might simply have ended \"quietly,\" as noted by\n*Jane's All the World's Aircraft*\n, by NASA not including funding in the following year's budget. No formal termination order or termination report could be located."
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false,
+          "context_mapping_normalization": "Remove only leading <N-hop> followed by blank line; stored original contexts unchanged."
+        }
+      }
+    },
+    {
+      "id": "b8532b66-d450-5534-b6ba-4b9a1e8e0bf0",
+      "input": "How did Richard H. Tabor maintain airflow during pressure-suit tests, and what drove the Navy to replace the Mark II design?",
+      "expected_output": "During 1958 long-duration tests with a Mark III, Mod II suit, Richard H. Tabor wore long underwear with Trilok spacer panels. These panels provided noncompressible mesh where the suit pressed tightly against the body, maintaining airflow, and at the exhaust-port fitting, preventing blockage. Separately, although the Mark II offered very reasonable mobility, the Navy remained concerned about its bulk, 23-pound weight, and discomfort caused by shoulder bearings and helmet tiedown cables. After several dozen suits were fabricated for evaluation, the Navy chose to sacrifice some mobility for greater comfort and lighter weight.",
+      "metadata": {
+        "case_id": "ragas-row-160",
+        "origin": "ragas_import",
+        "dataset_role": "ragas_import",
+        "question_type": "ragas_multi_hop_specific",
+        "answerability": "answerable",
+        "expected_behavior": "answer",
+        "synthetic": true,
+        "human_review_status": "unreviewed",
+        "generator_model": "unknown_from_export",
+        "provenance": {
+          "source_file": "nasa-rag-testset-200-chunks-400.json",
+          "source_sha256": "31c176152807905aa7351227a6d8ba2023080da8809ab8b780a2db68052bc33e",
+          "row_index_zero_based": 160,
+          "synthesizer_name": "multi_hop_specific_query_synthesizer",
+          "original_row": {
+            "user_input": "How did Richard H. Tabor maintain airflow during pressure-suit tests, and what drove the Navy to replace the Mark II design?",
+            "reference": "During 1958 long-duration tests with a Mark III, Mod II suit, Richard H. Tabor wore long underwear with Trilok spacer panels. These panels provided noncompressible mesh where the suit pressed tightly against the body, maintaining airflow, and at the exhaust-port fitting, preventing blockage. Separately, although the Mark II offered very reasonable mobility, the Navy remained concerned about its bulk, 23-pound weight, and discomfort caused by shoulder bearings and helmet tiedown cables. After several dozen suits were fabricated for evaluation, the Navy chose to sacrifice some mobility for greater comfort and lighter weight.",
+            "synthesizer_name": "multi_hop_specific_query_synthesizer"
+          },
+          "edits": []
+        },
+        "reference_context_ids": [
+          "7097f0ab-84c4-4b3f-8344-e876813278fe"
+        ],
+        "source_documents": [
+          {
+            "node_id": "7097f0ab-84c4-4b3f-8344-e876813278fe",
+            "document_id": "nasa:e36086f77952f47b7643ee650e60dbcd5312f6dd6567be0587818ea53f381445",
+            "title": "Dressing for Altitude",
+            "chunk_index": 159,
+            "sha256": "30ec37f4b13696390e11843442e255c93d807ba5c9d9489795152bcbefae2c51"
+          }
+        ],
+        "evidence": [
+          {
+            "node_id": "7097f0ab-84c4-4b3f-8344-e876813278fe",
+            "quote": "The Mark II was a somewhat lighter, slightly reconfigured version of the Mark I. This was probably the most flexible of the Goodrich suits, providing very reasonable mobility. The helmet, in particular, was innovative and served as the inspiration for several David Clark Company helmets that followed. The retractable clear visor used a pneumatic seal around its perimeter that inflated automatically as it was lowered. The breathing regulator was located on the left side of the helmet and included an \"ON-OFF\" oxygen control and a visor-seal deflation button. An adjustment knob for sizing the internal straps and pads that held the face seal against the face was located on the right side of the helmet. The clear and tinted visors retracted upward into an enclosed space intended to provide protection against scratching. 79\nphotograph\nImage credit: U.S. Navy\nLCDR Richard H. Tabor, MC, USN, in the long underwear he wore during a series of 1958 long-duration tests using a Mark III, Mod II suit. Long John underwear with Trilok spacer panels was worn under all Navy pressure suits, as well as the Mercury suits. The Trilock panels provided a noncompressible mesh that was used where the pressure suit would be in tight contact with the body to ensure airflow was maintained. It was also used at the location of the exhaust-port fitting to ensure the port was not blocked.\nThe Navy, however, was still concerned about the overall bulk and 23-pound weight of the Mark II, and it found that the shoulder bearings and helmet tiedown cables continued to cause discomfort. Although several dozen suits were fabricated for evaluation, ultimately, the Navy decided to trade some mobility for greater comfort and lighter weight. 80"
+          }
+        ],
+        "validation": {
+          "automated_judge_model": "codex/gpt-6-astra",
+          "automated_judge_status": "passed",
+          "exact_source_quotes_checked": true,
+          "human_reviewed": false,
+          "context_mapping_normalization": "Remove only leading <N-hop> followed by blank line; stored original contexts unchanged."
+        }
+      }
+    }
+  ],
+  "ragas_append": {
+    "imported_at": "2026-10-04T23:52:02.643944+00:00",
+    "source_file": "nasa-rag-testset-200-chunks-400.json",
+    "source_sha256": "31c176152807905aa7351227a6d8ba2023080da8809ab8b780a2db68052bc33e",
+    "source_rows": 169,
+    "selected_rows_zero_based": [
+      3,
+      4,
+      24,
+      33,
+      39,
+      41,
+      54,
+      55,
+      66,
+      77,
+      88,
+      140,
+      149,
+      156,
+      160
+    ],
+    "original_items_preserved": 15,
+    "imported_items": 15
+  }
+}

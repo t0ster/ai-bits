@@ -1,0 +1,24 @@
+{
+  "title": "Coming Home",
+  "authors": [
+    "Roger D. Launius",
+    "Dennis R. Jenkins"
+  ],
+  "publisher": "NASA",
+  "publication_date": "2012-10-10",
+  "description": "Returning to Earth after a flight into space is a fundamental challenge, and contributions from the NASA Aeronautics Research Mission Directorate in aerodynamics, thermal protection, guidance and control, stability, propulsion, and landing systems have proven critical to the success of the human space flight and other space programs.",
+  "language": "en-US",
+  "subjects": [
+    "coming home",
+    "jenkins",
+    "Launius",
+    "NASA",
+    "spaceflight"
+  ],
+  "collection": "The NASA Aeronautics e-Book Series",
+  "files": [
+    "Coming Home.epub",
+    "Coming Home.pdf"
+  ],
+  "cover": "cover.jpg"
+}

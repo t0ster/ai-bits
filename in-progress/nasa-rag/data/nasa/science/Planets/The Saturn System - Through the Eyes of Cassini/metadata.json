@@ -1,0 +1,27 @@
+{
+  "title": "The Saturn System: Through the eyes of Cassini",
+  "authors": [
+    "National Aeronautics and Space Administration (NASA)",
+    "NASA's Planetary Science Division (PSD)",
+    "NASA's Jet Propulsion Laboratory (JPL)",
+    "Lunar and Planetary Institute (LPI)"
+  ],
+  "publisher": "NASA",
+  "publication_date": "2017-10-18T14:40:57Z",
+  "description": "This NASA digital book presents the wonder and beauty of Saturn, its rings, and its moons through real images captured on the Cassini-Huygens mission.",
+  "language": "en-US",
+  "subjects": [
+    "Cassini mission",
+    "Saturn (planet)",
+    "Saturn rings",
+    "Titan",
+    "Enceladus",
+    "Saturn satellites"
+  ],
+  "collection": "Planets",
+  "files": [
+    "The Saturn System - Through the Eyes of Cassini.epub",
+    "The Saturn System - Through the Eyes of Cassini.pdf"
+  ],
+  "cover": "cover.jpg"
+}

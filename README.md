@@ -2,6 +2,10 @@
 
 Reusable building blocks and examples for AI applications.
 
+## Projects
+
+- [My Remote MCP](my-remote-mcp): Give ChatGPT, Claude, or any MCP client a shell on a machine you control — a server or your own laptop.
+
 ## In progress
 
 - [conversation-investigator-langgraph](in-progress/conversation-investigator-langgraph): LangGraph agent that investigates support conversations, with validated citations.

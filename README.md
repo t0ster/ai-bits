@@ -1,6 +1,4 @@
-# ai-bits
-
-Reusable building blocks and examples for AI applications.
+# mono
 
 ## Projects
 

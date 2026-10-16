@@ -4,7 +4,7 @@ Reusable building blocks and examples for AI applications.
 
 ## Projects
 
-- [My Remote MCP](my-remote-mcp): Give ChatGPT, Claude, or any MCP client a shell on a machine you control — a server or your own laptop.
+- [my-remote-mcp](my-remote-mcp): Give ChatGPT, Claude, or any MCP client a shell on a machine you control — a server or your own laptop.
 
 ## In progress
 
